@@ -1,0 +1,41 @@
+
+.oui-mixin__display-flex() {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.oui-savant__progress-group-container {
+  .oui-mixin__display-flex();
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  max-height: 345px;
+  flex: 1;
+  margin: auto;
+
+  > button.oui-icon-link.oui-icon {
+    height: min-content;
+    padding-top: calc(1rem * .5);
+  }
+
+  .oui-savant__progress-group {
+    flex: 1;
+    overflow-x: hidden;
+    padding-top: 0.75rem;
+  }
+
+}
+
+#hg {
+  .oui-savant__progress-group-container {
+    .oui-savant__progress-group {
+      flex: 1;
+      overflow-x: hidden;
+      padding-top: 0;
+    }
+
+    .oui-icon.oci-global-link.oj-button-icon > svg > polygon {
+      color: #2D3747;
+    }
+  }
+}

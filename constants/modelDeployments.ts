@@ -1,0 +1,17 @@
+export const BANDWIDTH_MIN = 10;
+export const BANDWIDTH_MAX = 8192;
+export const CONTAINER_IMAGE_NAME_SEPARATOR = "@";
+export const DEFAULT_METRICS_INTERVAL = 60000; // 1min in ms
+export const CUSTOM_IMAGE_FIELD_NAME = "customImage";
+export const IMAGE_FIELD_NAME = "image";
+export const CUSTOM_IMAGE_COMPARTMENT = "customImageCompartmentId";
+export const REPOSITORY_FIELD_NAME = "imageRepository";
+export const NAMESPACE_FIELD_NAME = "namespace";
+export const CONTAINER_CMD = "containerCommand";
+export const CONTAINER_ENTRYPOINT = "containerEntrypoint";
+export const HEALTHCHECK_PORT = "healthcheckPort";
+export const SERVER_PORT = "serverPort";
+export const SAME_IMG_DIFF_DIGEST = "sameImageDifferentDigest";
+export const MULTI_MODEL_DEPLOYMENT = "MULTI_MODEL";
+export const DEPLOYMENT_TYPE = "DEPLOYMENT_TYPE";
+export const MODEL_NAME_HEADER = "model-name";

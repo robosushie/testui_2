@@ -1,0 +1,38 @@
+.ts_main_container {
+    width: 100%;
+  }
+  
+  .ts_path_links_container {
+    width: 100%;
+    padding-left: 1rem;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .ts_path_links {
+    font-size: 0.8rem;
+    padding-right: 0.3rem;
+  }
+  
+  .ts_path_sign {
+    font-weight: bolder;
+    font-size: 0.5rem;
+    padding-right: 0.3rem;
+  }
+  .ts_path_links_inactive {
+    color: rgb(86, 86, 86);
+  }
+  
+  .ts_path_links_active {
+    color: rgb(0, 93, 253);
+  }
+  
+  .ts_scheme_title {
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    color: #404040;
+  }
+  

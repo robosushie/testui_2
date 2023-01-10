@@ -1,0 +1,16 @@
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app_main_section {
+    flex-grow: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+  }
+  

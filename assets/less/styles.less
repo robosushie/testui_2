@@ -1,0 +1,122 @@
+@import (css) "~oui-react/dist/oui-react.css";
+@import (css) "~oui-savant/dist/oui-savant.css";
+@import (css) "~loom-plugin-runtime/build/assets/adjust-dom-body.css";
+
+// Reference UIKit's less to reuse variables but don't actually import the source:
+@import (reference) "~oui-base/src/less/uikit.less";
+@import (css) "~console-telemetry-chart/build/main.css";
+
+// Compute Breeze Plugin
+@import (css) "~compute-console-breeze/dist/breeze.css";
+// @global-color comes from UIKit.
+#thing {
+  color: @global-color;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.file-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-right: 10px;
+
+  .upload-failed {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.file-container {
+  border-radius: 3px;
+  display: flex;
+  padding: 5px;
+  opacity: 1;
+
+  .file-name {
+    flex: 1;
+    margin-left: 5px;
+    justify-content: flex-start;
+  }
+
+  .file-actions {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: darken(@global-muted-background, 6%);
+  }
+}
+
+.file-container:hover {
+  opacity: 0.7;
+  user-select: none;
+}
+
+.file-size {
+  font-style: italic;
+  color: var(--oc-colors-primarygrays-60) !important;
+}
+
+.files-container {
+  border-radius: 3px;
+  padding: 5px;
+  background-color: darken(@global-muted-background, 2%);
+  max-height: 400px;
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+
+.oui-react-drop-file-selector-selected-file {
+  display: none !important;
+}
+
+.files-container-margin {
+  margin-top: -1rem;
+}
+
+.modal-action-margin {
+  margin-top: 2rem;
+}
+
+.modal-action-btn-margin > :first-child {
+margin-right: .5rem
+}
+
+.fullscreen-two-thirds-width {
+  width: 760px;
+  @media screen and (min-width: 1194px) {
+    width: 66%;
+  }
+}
+
+// This is to address a bug in the <StatusLabel> component
+// bug ticket here: https://jira-sd.mc1.oracleiaas.com/projects/CDXOPS/queues/custom/10238/CDXOPS-90
+.oui-text-info {
+  color: var(--oc-colors-blues-50);
+}
+
+// Fixes strong tags in delete confirm form
+.oui-react-form-field > *:not(textarea) {
+  white-space: break-spaces;
+}

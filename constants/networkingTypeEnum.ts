@@ -1,0 +1,4 @@
+export const enum NetworkingTypeEnum {
+  DEFAULT_NETWORKING = "DEFAULT_NETWORKING",
+  CUSTOM_NETWORKING = "CUSTOM_NETWORKING",
+}
