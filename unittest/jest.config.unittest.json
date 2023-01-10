@@ -1,0 +1,56 @@
+{
+  "rootDir": "../",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "<rootDir>/unittest/tsconfig.unittest.json"
+    }
+  },
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx}"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "^main$": "<rootDir>/src/main.tsx",
+    "^pluginConstants$": "<rootDir>/src/pluginConstants.ts",
+    "^apiClients$": "<rootDir>/src/apiClients.ts",
+    "^(components|constants|models|pages|utils|dialogs|hooks|panels)/(.+)": "<rootDir>/src/$1/$2",
+    "^@codegen/(.+)": "<rootDir>/codegen/$1",
+    "^@clients/(.+)": "<rootDir>/clients/$1",
+    "^@unittest/(.+)": "<rootDir>/unittest/$1",
+    "^notebooks/(.+)": "<rootDir>/src/notebooks/$1",
+    "^projects/(.+)": "<rootDir>/src/projects/$1",
+    "^pipelines/(.+)": "<rootDir>/src/pipelines/$1",
+    "^shared/(.+)": "<rootDir>/src/shared/$1",
+    "\\.(less|css|jpg|png)$": "<rootDir>/unittest/mocks.ts",
+    "^common/(.+)": "<rootDir>/node_modules/compute-console-breeze/dist/src/common/$1",
+    "^common$": "<rootDir>/node_modules/compute-console-breeze/dist/src/common",
+    "^shape/(.+)": "<rootDir>/node_modules/compute-console-breeze/dist/src/shape/$1"
+  },
+  "coverageReporters": [
+    "text",
+    "html"
+  ],
+  "coverageDirectory": "<rootDir>/unittest/coverage/",
+  "coverageThreshold": {
+    "global": {
+      "branches": 72,
+      "functions": 65,
+      "lines": 80,
+      "statements": 80
+    }
+  },
+  "moduleFileExtensions": [
+    "js",
+    "ts",
+    "tsx"
+  ],
+  "setupFiles": ["<rootDir>/unittest/jestSetup.ts"],
+  "transform": {
+    "^.+\\.(j|t)sx?$": "ts-jest",
+    "^.+\\.(css|less)$": "./unittest/styleMock.js"
+  },
+  "transformIgnorePatterns": ["<rootDir>/node_modules/(?!lodash-es)"],
+  "testRegex": "/src/.*\\.unit.test\\.tsx?$"
+}
