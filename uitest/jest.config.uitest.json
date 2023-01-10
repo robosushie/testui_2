@@ -1,0 +1,29 @@
+{
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "<rootDir>/tsconfig.uitest.json"
+    }
+  },
+  "transform": {
+    "\\.(ts|tsx)$": "ts-jest"
+  },
+  "moduleDirectories": [
+    "src",
+    "node_modules"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js"
+  ],
+  "moduleNameMapper": {
+    "^@codegen/(.+)": "<rootDir>/../codegen/$1",
+    "^.+\\.(css|less)$": "<rootDir>/styleMock.js"
+  },
+  "testRegex": "((\\.|/)(uitest))\\.[j|t]s?$",
+  "reporters": [
+    "default",
+    "<rootDir>/helpers/TestSetupReporter.js"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/helpers/TestSetupScript.ts"
+}

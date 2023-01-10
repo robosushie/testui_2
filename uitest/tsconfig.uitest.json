@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "src/*": [
+        "../src/*"
+      ],
+      "@codegen/*": [
+        "../codegen/*"
+      ],
+    },
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es5",
+      "es2019"
+    ]
+  },
+  "include": [
+    "./**/*"
+  ]
+}

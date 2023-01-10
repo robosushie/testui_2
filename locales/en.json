@@ -1,0 +1,1691 @@
+{
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "open": "Open",
+    "create": "Create",
+    "viewDetails": "View details",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "terminate": "Terminate",
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "createModelDeployment": "Create model deployment",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "selectShape": "Select shape",
+    "close": "Close",
+    "loading": "Loading...",
+    "support": "Support",
+    "applyTags": "Apply tags",
+    "starting": "Starting...",
+    "creating": "Creating...",
+    "advancedOptions": "Show advanced options",
+    "hideAdvancedOptions": "Hide advanced options",
+    "select":"Select",
+    "upload": "Upload",
+    "start": "Start",
+    "moveResource": "Move resource",
+    "saveAsStack": "Save as stack"
+  },
+  "labels": {
+    "redirectOnCreate": "View detail page on clicking create.",
+    "redirectOnSubmit": "View details page on clicking submit.",
+    "metrics": "Metrics",
+    "tags": "Tags",
+    "optional": "Optional",
+    "moreInfo": "More information"
+  },
+  "icon": {
+    "ariaLabel": {
+      "warning": "Warning",
+      "externalLink": "External Link",
+      "NullIcon": "None"
+    }
+  },
+  "loggingConfiguration":{
+    "loggingTitle": "Logging",
+    "loggingEnabled": "Logging enabled",
+    "loggingDisabled": "Logging disabled",
+    "selectLogging": "Select logging",
+    "noLogGroupsFound": "No log groups found in this compartment",
+    "noLogsFound": "No logs found in this log group",
+    "noDefaultLogGroupSelected": "No default log group is selected",
+    "loggingIsNotEnabled": "Logging is not enabled",
+    "noDefaultLogSelected": "No default log is selected",
+    "autoLoggingEnabled": "Automatic creation of logs is enabled",
+    "loggingConfiguration": "Logging configuration",
+    "loggingConfigurationOverride": "Logging configuration override",
+    "defaultLogGroupAndAutoLog": "Log group selected: {groupName}. Automatic logging enabled.",
+    "defaultLogGroupAndLog": "Log group selected: {groupName}. Log selected: {logName}",
+    "enableLogging": "Enable logging",
+    "automaticLogging": "Automatic logging",
+    "enableAutoLogCreation": "Enable automatic log creation",
+    "selectALog": "Select a log",
+    "logGroup": "Log group",
+    "logName": "Log name",
+    "noLogGroupSelected": "No log group selected",
+    "noLogSelected": "No log selected",
+    "labels":
+    {
+      "defaultLogGroup": "Default log group"
+    },
+    "defaultLog": "Default log",
+    "loggingDetails": "Logging details",
+    "log": "Log",
+    "defaultLogGroup": "Log group selected: {groupName}."
+
+  },
+  "tooltips": {
+    "project": "Projects are a way of organizing and sharing your work.",
+    "compartmentSelect": "Select the compartment that your resource should belong to.",
+    "projectSelect": "Select the project that your resource should belong to.",
+    "modelArtifact": "Upload your model artifact here. This is required.",
+    "displayName": "A name is automatically created for you if not provided.",
+    "editDisplayName": "Do not leave the name field blank when editing this resource.",
+    "blockStorageSize": "Select a volume size that satisfies your needs.",
+    "modelOcid": "Add the OCID of the Model that will be used for this model deployment",
+    "jobArtifact": "Required if you aren't using the bring your own container option.",
+    "environmentVariables": "Add environment variables for your job",
+    "commandlineArguments": "Add command line arguments for your job",
+    "maximumRuntimeInMinutes": "Set the maximum runtime (in minutes) for your job",
+    "numberOfInstances": "Add the number of instances that will be used for this model deployment",
+    "jobRunLogging": "If no logging configuration override is selected for the job run, the default job logging will be used, if any.",
+    "versionLabel":  "Version label can be added only when model is associated with a model version set",
+    "pipelineRunLogging": "If no logging configuration override is selected for the pipeline run, the default pipeline logging will be used, if any.",
+    "jobsBYOCEnvVar": "You specify your own container with the environment variable instead of uploading a job artifact.",
+    "customContainer": "Use a container image from OCI Container Registry as the deployment server. <a target=\"_blank\" href=\"{href}\">Learn more.</a> Only Docker images are supported.",
+    "containerCMD": "The instructions to be executed when the container starts. Use the exec format: 'executable, param1, param2'",
+    "containerEntrypoint": "The executable to run when the container is started from an image.",
+    "serverPort": "The port on which the web server serving the inference is running. Default is 8080. The port can be anything between 1024 and 65535. The following ports cannot be used 24224, 8446, 8447.",
+    "healthcheckPort": "The port on which the container HEALTHCHECK would listen. Defaults to the server port. The port can be anything between 1024 and 65535. The following ports cannot be used 24224, 8446, 8447.",
+    "containerCustomImage": "{CONTAINER_CUSTOM_IMAGE}: The full path to the Oracle Container Repository registry, image, and tag in a canonical format.",
+    "bareMetal": "Review minimum charge for bare metal compute instances. <a target=\"_blank\" href=\"{href}\">Learn more</a>",
+    "pipelineStepArtifact": "Required if the step type is custom script."
+  },
+  "breadcrumb": {
+    "projects": "Projects",
+    "featureStores": "Feature stores",
+    "featureStoreFeatureSchema": "Schemas",
+    "featureStoreFeatureTransformation": "Transformations",
+    "entities": "Entities",
+    "featureDefinitions" : "Feature definitions",
+    "datasets" : "Datasets",
+    "projectDetails": "Project details",
+    "featureStoreDetails": "Feature store details",
+    "projectDetail": "Project detail",
+    "notebooks": "Notebook sessions",
+    "datasources": "Data Sources",
+    "pipelineDetails": "Pipeline details",
+    "home": "Home",
+    "modelVersionSet": "Model version set",
+    "models": "Models",
+    "modelDeployments": "Model deployments",
+    "resourceDetails": "{resourceName} Details",
+    "dataScience": "Data Science",
+    "jobs": "Jobs",
+    "pipelines": "Pipelines",
+    "defaultConfiguration": "defaultConfiguration",
+    "jobRuns": "Job runs",
+    "workRequests": "Work requests",
+    "pipelineRuns": "Pipeline runs",
+    "pipelineStepRunDetails": "Pipeline step run details",
+    "pipelineRunDetails": "Pipeline run details",
+    "stepDetails": "Step Details",
+    "featureStore": "Feature Store",
+    "featureDefinitionDetails": "Feature definition details"
+  },
+  "captions":{
+    "projects": "Projects",
+    "featureStores": "Feature Stores",
+    "notebooks": "Notebook sessions",
+    "models": "Models",
+    "jobs": "Jobs",
+    "entities": "Entities",
+    "columns": "column",
+    "fdp" : "Fdp",
+    "datasets" : "Datasets",
+    "pipelines": "Pipelines",
+    "jobRuns": "Job runs",
+    "pipelineRuns": "Pipeline runs",
+    "modelDeployments": "Model deployments",
+    "pipelineSteps": "Pipeline steps",
+    "pipelineStepRuns":"Pipeline step runs",
+    "modelDeploymentsForModel":"Model deployments for model"
+  },
+  "detailTemplate": {
+    "ocid": "OCID",
+    "detailsLabel": "{resourceName} information",
+    "tagsLabel": "Tags"
+  },
+  "errors": {
+    "regionUnavailable": "The Data Science service is not available in your currently selected region.",
+    "selectCompartment": "You must select a compartment.",
+    "nothingHere": "Nothing here? Possible reasons:",
+    "notFound": "The {resourceType} you are trying to view cannot be found in this region.",
+    "noAuth": "You do not have access to view this {resourceType}.",
+    "noListAuth": "You do not have access to list {resourceType}.",
+    "generic": "An unexpected error occurred.",
+    "fetching": "Error fetching data.",
+    "refreshHint": "You may need to refresh to see latest changes."
+  },
+  "projects": {
+    "linkText": "Projects",
+    "detailText": "Project",
+    "createTitle": "Create project",
+    "deleteTitle": "Delete project",
+    "editTitle": "Edit project",
+    "createDescription": "Projects enable you to organize your team's data science work.",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{projectName}</strong>?",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "removeResourcesWarning": "You must remove all resources from this project before you can delete it.",
+    "deleteStateWarning": "After you click Delete, the project enters a deleting state.",
+    "canFailWarning": "If resources still exist in the project, the delete action fails and the project returns to an active state.",
+    "deleteFailed": "This project could not be removed because active resources still exist.",
+    "deleteInProgress": "Checking for active resources...",
+    "editProjectSuccessMessage": "Successfully updated a project",
+    "createProjectSuccessMessage": "Successfully created a project",
+    "saveAsStackSuccessMessage": "Successfully saved the project as stack",
+    "saveAsStackFailureMessage": "Error occured while saving the project as stack",
+    // @i18n:single:trans(false)
+    "shapeText": "P",
+    "labels": {
+      "compartment": "Compartment",
+      "description": "Description",
+      "name": "Name",
+      "timeCreated": "Created",
+      "createdBy": "Created by",
+      "summary": "Summary Information",
+      "state": "State",
+      "numberShowingText": "{numberShowing, plural, =0 {No Feature Stores to show} one {Showing # Feature Store} other {Showing # Feature Stores}}"
+    },
+    "actions": {
+      "create": "Create project",
+      "moveResource": "Move resource",
+      "addTags": "Add tags"
+    }
+  },
+  "featureStore": {
+    "linkText": "Feature Stores"
+  },
+  "featureStoreEntity": {
+    "linkText": "Entities"
+  },
+  "dataSource": {
+    "linkText": "Data Sources"
+  },
+  "featureStoreFeatureSchema": {
+    "linkText": "Feature Schemas"
+  },
+  "featureStoreFeatureTransformation": {
+    "linkText": "Transformation"
+  },
+  "featureStoreDataset": {
+    "linkText": "Datasets"
+  },
+  "featureStoreFeatureDefinition": {
+    "detailText": "Feature definition",
+    "linkText": "Feature Definitions",
+    "shapeText": "FD",
+    "labels": {
+      "description": "Description",
+      "type": "Type",
+      "name": "Name",
+      "nullable": "Nullable",
+      "entity": "Entity",
+      "defaultValue": "Default Value",
+      "orderNumber": "Order Number"
+    }
+  },
+
+  "featureStores": {
+    "detailText": "Feature store",
+    "shapeText": "FS",
+    "labels": {
+      "description": "Description",
+      "timeCreated": "Created"
+    }
+  },
+  "warnings": {
+    // VCN is an acronym for Virtual Cloud Network
+    "emptySubnetList": "No subnets in this compartment and VCN.",
+    // VCN is an acronym for Virtual Cloud Network
+    "emptyVcnList": "No VCNs in this compartment.",
+    "emptyProjectList": "No projects in this compartment.",
+    "emptyJobList": "No jobs in this compartment."
+  },
+  "notebooks": {
+    "linkText": "Notebook sessions",
+    "detailText": "Notebook Session",
+    "editTitle": "Edit notebook session",
+    "createTitle": "Create notebook session",
+    "deleteTitle": "Delete notebook session",
+    "details": "Notebook session details",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{displayName}</strong>?",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "deleteDisclaimer": "Any files or changes on the notebook session's file system that have not been backed up or committed are lost.",
+    "deactivateTitle": "Deactivate notebook session",
+    "deactivateConfirmation": "Are you sure you want to deactivate <strong>{displayName}</strong>?",
+    "deactivateDisclaimer": "Deactivating a notebook session updates its state to inactive. The notebook session compute instance is terminated, and the storage volume is retained. When you reactivate this notebook session, this volume is reattached to the notebook session compute instance.",
+    "sizeInGigabytes": "{size, number} GB",
+    // @i18n:single:trans(false)
+    "shapeText": "N",
+    "activateTitle": "Activate notebook session",
+    "activateDisclaimer": "Activating the <strong>{displayName}</strong> notebook session.",
+    "metricsInfoBlock": "Metrics are only available for newly created or activated notebook sessions. Create a new notebook session or deactivate then reactivate this one to enable metrics. If no metrics are displayed for a new notebook session, then ensure that you have permissions to read metrics.",
+    "metricsDocsLinkText": "Learn More",
+    "labels": {
+      "compartment": "Compartment",
+      "timeCreated": "Created on",
+      "createdBy": "Created by",
+      "computeResource": "Compute Resource",
+      "resource": "Resource",
+      "state": "State",
+      "name": "Name",
+      "description": "Description",
+      "numberShowingText": "{numberShowing, plural, =0 {No notebook sessions to show} one {Showing # notebook session} other {Showing # notebook sessions}}",
+      "instanceShape": "Compute instance shape",
+      "blockStorageSize": "Block storage size (in GB)",
+      // VCN is an acronym for Virtual Cloud Network
+      "vcnCompartment": "VCN compartment",
+      // VCN is an acronym for Virtual Cloud Network
+      "vcn": "VCN",
+      "subnet": "Subnet",
+      // OCPU is an acronym for Oracle CPU
+      "computeSelectDescription": "{ocpus} core OCPU, {memory}GB memory",
+      // OCPU is an acronym for Oracle CPU
+      "ocpusLabel": "Number of OCPUs",
+      "memoryLabel": "Amount of memory(GB)"
+    },
+    "hints": {
+      "blockStorageSize": "The size must be between {minSize, number} GB and {maxSize, number} GB ({maxSizeTB, number} TB)",
+      "blockStorageSizeDefault": "Default {defaultSize, number} GB. The size must be between {minSize, number} GB and {maxSize, number} GB ({maxSizeTB, number} TB)",
+      // VCN is an acronym for Virtual Cloud Network
+      "vcnMissingPermissionsHoverText": "Request your administrator for access to read the subnet resource to see its associated VCN.",
+      "subnetHint": "For egress access to the public internet, we recommend using a private subnet with a route to a NAT gateway. Whether a public or private subnet is chosen for a notebook session, it must have a NAT gateway and matching route table, and security list rules to achieve egress to the internet."
+    },
+    "actions": {
+      "create": "Create notebook session",
+      "moveResource": "Move resource"
+    },
+    "runtimeConfig": {
+      "sectionHeader": "Runtime configuration",
+      "sectionDescription": "Configure your often used notebook session metadata and Git options to be ready for use when this notebook is opened.",
+      "sectionDescriptionTooltip": "This configuration isn't encrypted. Do not use private information like passwords.<a target=\"_blank\" href=\"{href}\">Use the Vault service instead.</a>.",
+      "sectionHelpText": "<a target=\"_blank\" href=\"{href}\">What can I do with runtime configuration?</a>",
+      "customEnvVarTabHeader": "Key value pairs",
+      "gitConfigTabHeader": "Git settings",
+      "previewActionText": "Preview configuration",
+      "gitRepoUrlInputLabel": "Git repository URL",
+      "gitSettingsAddUrlActionLabel": "+ Add Git setting",
+      "previewNoKeyLabel": "No Key",
+      "customEnvVarTabDescription": "You can use a maximum of {limit, number} key value pairs, which is available as environment variables in this notebook session.",
+      "customEnvVarAddNewRowText": "+ Add key value pair",
+      "customEnvVarKeyLabel": "Key",
+      "customEnvVarKeyTooltip": "Keys must be unique and can't be reserved variables or namespace. Keys are {min, number} - {max, number} characters.",
+      "customEnvVarValueLabel": "Value",
+      "customEnvVarValueTooltip": "Values are {min, number} - {max, number} characters.",
+      "gitSettingsTabDescription": "You can use up to {limit, number} <strong>public</strong> Git repositories for the notebook session. The notebook must have public internet access to connect.",
+      "gitSettingsURLTooltip": "URLs must be unique, and HTTPS protocol allowed.",
+      "duplicateGitRepoUrlError": "Duplicate Git repository URL.",
+      "duplicateCustomEnvVarKeyError": "Duplicate key.",
+      "InvalidUrlFormatError": "Wrong Git URL format.",
+      "GitUrlNotReachableError": "Git URL is not reachable so verify it.",
+      "InvalidCustomEnvVarKeyPrefixError": "Key can't start with a reserved namespace that starts with \"oci_\"",
+      "InvalidCustomEnvVarKeyFormatError": "Key must start with a letter or underscore, and can only contain alphanumerics and underscores.",
+      "hintTextCustomEnvVarKey": "For example, companyName.",
+      "hintTextCustomEnvVarValue": "For example, Oracle.",
+      "hintTextGitRepoUrl": "For example, https://github.com/oracle/accelerated-data-science.git."
+    }
+  },
+  "models": {
+    "linkText": "Models",
+    "description": "The model catalog is a centralized and managed repository of model artifacts. Models stored in the catalog can be shared across members of a team and they can be loaded back, for example, into a notebook session. Models in the model catalog can also be deployed as HTTP endpoints through Model Deployments.",
+    "learnMoreText": "<a target=\"_blank\" href=\"{href}\">Learn more about the model catalog.</a>.",
+    "detailText": "Model",
+    "createTitle": "Create model",
+    "editTitle": "Edit model",
+    "addTitle": "Add model to version set",
+    "deleteTitle": "Delete",
+    "activateTitle": "Activate model",
+    "deactivateTitle": "Deactivation",
+    "schemaDefinitionTitle": "Input and output data schema",
+    "downloadArtifact": "Download artifact",
+    "uploadArtifact": "Upload artifact",
+    "modelArtifactTitle": "Model artifact",
+    "modelProvenanceTitle": "Model provenance",
+    "modelTaxonomyTitle": "Document model taxonomy",
+    "createModelLoadingText": "Creating Model...",
+    "createModelSuccessMessage": "Successfully created a model",
+    "createModelVersionSetSuccessMessage": "Successfully created a model version set",
+    "addModelToVersionSetSuccessMessage": "Successfully added model to version set",
+    "uploadArtifactLoadingText": "Uploading Artifact...",
+    "createProvenanceLoadingText": "Creating Provenance...",
+    "modelProvenanceDesc": "Model provenance metadata gives contextual information on the source code used to train the model stored in catalog. Your diligent tracking of the provenance metadata significantly improves model reproducibility and auditability.",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{displayName}</strong>?",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "deleteDisclaimer": "Deleting this model erases the model artifacts and the model metadata.",
+    "deleteWarningTitle": "Any models used in an active model deployment will be prevented from being deleted.",
+    "missingArtifact": "This model's artifact is missing. Retry uploading one.",
+    "genericMissingArtifact": "Something unexpected has occurred. Artifact details are not available.",
+    "deactivateConfirmation": "Are you sure you want to deactivate <strong>{displayName}</strong>?",
+    "deactivateDisclaimer": "Deactivating a model updates its state to inactive. Inactive models cannot be used in a model deployment. Inactive models are not deleted and can later be reactivated.",
+    "activateConfirmation": "Are you sure you want to activate <strong>{displayName}</strong>?",
+    "activateDisclaimer": "Active models are currently under experimentation. By default, inactive models are archived.",
+    // @i18n:single:trans(false)
+    "shapeText": "M",
+    "labels": {
+      "description": "Description",
+      "modelArtifact": "Model artifact",
+      "modelVersionSet": "Model version set",
+      "uploadLabel": "Upload an artifact file",
+      "uploadArtifact": "Artifact",
+      "modelArtifactLabelForModelDetails": "Model artifacts",
+      "compartment": "Compartment",
+      "name": "Name",
+      "none": "None",
+      "createdBy": "Created by",
+      "state": "State",
+      "timeCreated": "Created",
+      "versionSetName": "Version set name",
+      "versionId": "Version ID",
+      "versionLabel": "Version label",
+      "selectByProject": "Select a project",
+      "versionSetDetails": "Version set information",
+      "features": "Features",
+      "modelInformation": "Model Information",
+      "numberShowingText": "{numberShowing, plural,one {Showing # item} other {Showing # items}}",
+      "modelProvenance": "Model provenance",
+      "modelTaxonomy": "Model taxonomy",
+      "documentModelProvenance" : "Document model provenance",
+      "modelProvenanceSelect": "Model provenance documents the model training code and the training environment that was used to create the model.",
+      "modelVersionSetSelect": "The model version set controls the lifecycle of the namespace/lineage of versions.",
+      "repositoryUrl": "Git Repository URL",
+      "gitCommit": "Git Commit",
+      "gitBranch": "Git Branch",
+      "scriptDir": "Model Directory",
+      "trainingScript": "Training Script",
+      "modelTaxonomyDescription": "Model taxonomy allows you to document your models use case, machine learning framework, hyperparameters, and so on. In addition, you can create custom metadata to further document your model. ",
+      "schemaDefinition": "Schema definition",
+      "modelSchemaDescription" : "Model input and output data schema allows you to define and document the required features that are necessary to make a model prediction as well as the schema of the predictions returned by the model.",
+      "artifactDescription": "A model artifact is a ZIP archive of the files necessary to deploy your model as a model deployment or load it back in a notebook session.",
+      // This file selector is always followed by "select a file"
+      "fileSelectorText": "Drop a file or",
+      // This file selector is always preceeded by "Drop a file or"
+      "fileSelectorBrowseLinkText": "select a file.",
+      "moveResourceType": "model application",
+      "compartmentSelectLabel": "Available active model version sets in compartment {compartmentName} and in project {projectName}."
+    },
+    "actions": {
+      "create": "Create model",
+      "configure": "Configure",
+      "createModelVersionSet": "Create model version set",
+      "delete": "Delete",
+      "downloadSampleArtifact": "Download sample artifact ZIP",
+      "downloadArtifact": "Download model artifacts",
+      "cancelDownloadArtifact": "Cancel Download",
+      "retryDownloadArtifact": "Retry Download",
+      "retryUpload": "Retry Upload",
+      "upload" : "Upload",
+      "edit": "Edit",
+      "add": "Add",
+      "addModelToVersionSet": "Add model to version set",
+      "uploadArtifact": "Upload Artifact",
+      "downloadBoilerPlateArtifactCode": "Download sample artifact ZIP",
+      "select": "Select",
+      "addCustomAttribute": "+ Another Custom Attribute"
+    },
+    "resources": {
+      "modelDeploymentsForModel": {
+        "linkText": "Associated model deployments",
+        "description": "List of model deployments that are using this model.",
+        "compartmentName": "Compartment name"
+      },
+      "modelTaxonomy": {
+        "linkText": "Model taxonomy",
+        "description": "Model taxonomy allows you to describe the model you are saving to the model catalog. You can use the pre-allocated fields under Taxonomy for documenting the machine learning use case, the machine learning model framework, version, estimator object or the model hyperparameters. All of these are optional.You can also create custom attributes by creating label-value pairs.",
+        "definedMetadataLabel" : "Taxonomy",
+        "customMetadataLabel" : "Custom model attributes",
+        "selectCategory": "Select category",
+        "all": "All"
+      },
+      "modelProvenance": {
+        "title": "Model provenance",
+        "description": "Model provenance is a piece of documentation that helps you improve the model reproducibility and auditability. You can document the resource that the model was trained in (either a notebook session or job run), and the Git reference to the training source code. These parameters are automatically extracted when you save a model with the Accelerated Data Science (ADS) SDK.",
+        "TrainingResourceOcid": "Training resource",
+        "ModelTrainingSourceCode": "Model training source code",
+        "errorMessages": {
+          "notFound": "The resource with this OCID cannot be found or you do not have permissions to access it."
+        },
+        "resource": "Resource",
+        "compartment": "Compartment",
+        "jobRun" : "Job run",
+        "notebookSession" : "Notebook session",
+        "dataScienceNotebookSession": "datasciencenotebooksession",
+        "dataScienceJobRun": "datasciencejobrun",
+        "columns" : {
+          "resourceName" : "Resource name",
+          "resourceType" : "Resource type",
+          "compartmentName": "Compartment name",
+          "status": "Status",
+          "createdBy": "Created by",
+          "createdOn": "Created"
+        }
+      }
+    },
+    "selectPanes": {
+      "modelVersionSet":
+      {
+        "configureTitle": "Configure model version set",
+        "selectedInputLabel": "Version set name: {versionSetName}, Version label: {versionLabel}",
+        "description": "Users can configure the lineage of versions to a machine learning model.",
+        "table": {
+          "name": "Model name"
+        },
+        "labels": {
+          "modelVersionSetConfigurationOptions" : "Select or Create Model Version Set",
+          "description": "Description",
+          "compartment": "Compartment",
+          "projectId": "Project ID",
+          "name": "version set name",
+          "versions": "Add additional models to the version set",
+          "selectFromExistingGroups": "Select from existing version sets",
+          "createNewModelVersionSet": "Create model in a new version set",
+          "versionLabel": "Version label",
+          "fieldSetVersionLabel": "Add version label for model",
+          "addModelsToModelVersionTabs": "Add models",
+          "tags": "Tags"
+        },
+        "modelVersionSetTable": {
+          "description": "Select the models you want to add to the model version set. Version numbers are automatically generated for each model you add to the set. \nVersion numbers (integers) are assigned in ascending order based on the \"Created at\" field from old to new"
+        },
+        "tooltip": {
+          "versionLabel": "Provide version label"
+        },
+        "hints": {
+          "name": "A name should be unique within a compartment"
+        },
+        "toastNotification": "Successfully configured model version set"
+      },
+      "modelProvenanceSelect": {
+        "title": "Document model provenance",
+        "label" :  "Select model provenance",
+        "description": "Model provenance is a piece of documentation that helps you improve the model reproducibility and auditability. You can document the resource that the model was trained in (either a notebook session or job run), and the Git reference to the training source code. These parameters are automatically extracted when you save a model with the Accelerated Data Science (ADS) SDK.",
+        "toastNotification": "Successfully selected {name}",
+        "tooltip": {
+          "gitRepoURL": "URL of the remote Git repository",
+          "gitCommit": "Commit ID of Git repository",
+          "gitBranch": "Branch of the Git repository",
+          "localModelDirectory": "Local path to the model artifact directory",
+          "modelTrainingScript": "Model training scripts associated to training dataset"
+        },
+        "actions": {
+          "search": "Search"
+        },
+        "errorMessages" : {
+          "notValidOCID" : "Invalid OCID training id",
+          "notFound": "The resource with this OCID cannot be found or you do not have permissions to access it."
+        },
+        "labels": {
+          "notebookSessionResource" : "Notebook session",
+          "jobRunResource" : "Job run",
+          "selectByCompartmentAndProject": "Choose a project",
+          "selectByProjectLabel": "Select a project",
+          "searchByOCIDLabel": "Notebook session OCID",
+          "searchByJobRunOCIDLabel": "Job run OCID",
+          "searchOCID": "Search by OCID",
+          "selectedInputLabel": "Resource: {resource}, Compartment: {compartment}",
+          "resource": "Resource: ",
+          "compartment": "Compartment: ",
+          "OcidtableLabel": "Available {resource} in project {projectName} and in compartment {compartmentName}."
+        },
+        "trainingCode": {
+          "optionText" : "Training code",
+          "description" : "A reference to the git repository and commit ID where the model training code was stored.",
+          "label" : {
+            "gitBranch" : "Git branch",
+            "gitCommit" : "Git commit",
+            "scriptDir" : "Local model directory",
+            "trainingScript" : "Model training script",
+            "repositoryUrl" : "Git repository URL"
+          }
+        },
+        "jobsRun": {
+          "label": "Find a job run ",
+          "optionText" : "Job run",
+          "tooltip" : "Add the OCID of the Job Run that was used to train the model.",
+          "cardDesc" : "Choose a compartment for both the project and the job run. If your job run is in a different compartment than the project, then enter or search for the job run OCID.",
+          "description" : "Job runs are batch execution of custom Python scripts. You can use them to train models."
+        },
+        "notebookSession": {
+          "label": "Find a notebook session",
+          "tooltip": "Add the OCID of the notebook session that was used to train the model.",
+          "compartmentTableLabel": "Only active resources are displayed in the table. If your {trainingOcidType} is in a different state, use the \"Search by OCID\" option. Available {trainingOcidType} in project {projectName} and in compartment {compartmentName}.",
+          "optionText" : "Notebook session",
+          "cardDesc" : "Choose a compartment for both the project and the notebook session. If your notebook session is in a different compartment than the project, then enter or search for the notebook session OCID.",
+          "description" : "Notebook sessions are interactive coding environments for building and training models."
+        }
+      },
+      "artifactSelect": {
+        "title": "Upload model artifact",
+        "message": "A model artifact is a ZIP archive of the files necessary to deploy your model as a model deployment or load it back in a notebook session.",
+        "actions": {
+          "search": "Search"
+        },
+        "labels": {
+          "selectedArtifact": "Selected artifact: "
+        }
+      },
+      "modelTaxonomySelect": {
+        "title": "Document model taxonomy",
+        "message": "Select a model taxonomy to describe the model to save to the model catalog. You can add custom attributes by creating label-value pairs.",
+        "labels": {
+          "useCase": "Use case",
+          "frameworkName": "Model framework",
+          "frameworkVersion": "Model framework version",
+          "algorithm": "Model algorithm or model estimator object",
+          "hyperParameters": "Model hyperparameters",
+          "artifactTestResults": "Artifact test results",
+          "label": "Label",
+          "value": "Value",
+          "category": "Category",
+          "description": "Description",
+          "customAttribute": "Custom attribute",
+          "useCaseType": "Use case type",
+          "framework": "Framework",
+          "estimatorObject": "Estimator object",
+          "taxonomyType": "Taxonomy type",
+          "taxonomyValue": "Value"
+        },
+        "tooltips": {
+          "useCaseType": "Use case associated with the model.",
+          "frameworkName": "Python library used to train the model.",
+          "frameworkVersion": "Version of the machine learning library.",
+          "algorithm": "Algorithm or model estimator class.",
+          "hyperParameters": "The model hyperparameters in JSON format.",
+          "artifactTestResults": "Artifact test results in JSON format."
+        },
+        "modelTaxonomy": {
+          "label": "Model taxonomy",
+          "description": "A series of preset labels that you can use to document the model. "
+        },
+        "customAttributes": {
+          "label": "Create custom label and value attribute pairs.",
+          "numberShowingText": "{numberShowing, plural, =0 {No Items to show} one {Showing # Item} other {Showing # Items}}"
+        }
+      },
+      "modelSchemaSelect": {
+        "title": "Model input and output data schema",
+        "message": "The model input schema is a JSON file that provides a schema definition of the features expected by the model artifact score.py predict() function. The output schema documents the schema of the model predictions. This is also a JSON file. Refer to this section of our <a target=\"_blank\" href=\"{href}\">service documentation</a> to document your input and output data schema.",
+        "labels":
+        {
+          "uploadInputSchema" : "Select input schema",
+          "uploadInputSchemaDescription" : "The input schema is the sequence of steps to pass as an input to an orchestration API to enable actual workflow execution.",
+          "uploadOutputSchema" : "Select output schema",
+          "uploadOutputSchemaDescription" : "The output schema specifies what and how the data results are returned.",
+          "inputSchemaUploadLabel": "Upload an input schema file",
+          "outputSchemaUploadLabel": "Upload an output schema file",
+          "inputResourceType" : "Input data schema ",
+          "outputResourceType" : "Output data schema ",
+          "uploadFileTypeRequirementText": "{fileType} file only",
+          "uploadFileTypeError" : "Invalid file type.",
+          "inputSchema": "Input schema",
+          "outputSchema": "Output schema"
+        }
+      }
+    },
+    "errorMessages": {
+      "customAttributesLimit": "Custom metadata is limited to a maximum of 50 entries.",
+      "addModelToMVSDetailsDialog": {
+        "noModelSelected": "No model is selected"
+      },
+      "modelMoveToVersionSetDialog": {
+        "noModelVersionSelected": "No model version set is selected"
+      }
+    },
+    "modelIntrospection": {
+      "title": "Model introspection",
+      "description": "Model introspection captures the results of the tests run on the client side before the model is saved to the model catalog.",
+      "error": "No tests have been run on the model artifact.",
+      "status": {
+        "notTested": "Not tested",
+        "success": "Success",
+        "failed": "Failed",
+        "warning": "Warning"
+      }
+    },
+    "hints": {
+      "modelArtifact": "Artifact uploads from the console are limited to less than {maxSize, number} MiB",
+      "example": "Example: {exampleString}"
+    }
+  },
+  "modelSchema":
+  {
+    "title" : "Input and output data schema",
+    "description": "The input schema is the sequence of steps to pass as an input to an orchestration API to enable actual workflow execution. The output schema specifies what and how the data results are returned.",
+    "inputSchema": "Input data schema",
+    "outputSchema": "Output data schema",
+    "NoDataFound" : "No items found.",
+    "copy": "Copy to clipboard"
+  },
+  "modelVersionSets":
+  {
+    "resources": {
+      "modelMemberships": "Model memberships",
+      "workRequests": {
+        "linkText": "Work requests"
+      },
+      "models": "Models"
+    },
+    "actions": {
+      "loading": "Adding models",
+      "modelMemberships": {
+        "compareVersion": "Compare versions"
+      }
+    },
+    "compareVersions": {
+      "category": "Category",
+      "dropDownVersion": "{displayName} (Version {v})",
+      "compareTo": "compare to",
+      "general": "General",
+      "provenance": "Provenance",
+      "taxonomy": "Taxonomy",
+      "compareCategories": "Compare categories",
+      "highlightDifferences": "Highlight differences",
+      "version": "Version",
+      "versionLabel": "Version label",
+      "artifactSize": "Artifact size",
+      "tags": "Tags",
+      "createdBy": "Created by",
+      "created": "Created",
+      "framework": "Framework",
+      "frameworkVersion": "Framework version",
+      "useCase": "Use case",
+      "modelAlgorithm": "Model algorithm/stimator object",
+      "hyperparameters": "Hyperparameters",
+      "tabs": {
+        "associateMDTab": {
+          "associateMDTab" : "Associated model deployment ",
+          "latestMDCreated" : "Latest model deployment created",
+          "totalNumberOfMD" : "Total number of model deployments",
+          "totalActiveMD" : "Active model deployments"
+        },
+        "customAttributesTab" : {
+          "customAttributesTabLabel" : "Custom model attributes"
+        },
+        "inputAndOutputSchemaTab" : {
+          "inputAndOutputSchemaTabLabel" : "Input and output data schema"
+        }
+      }
+    },
+    "deleteTitle": "Delete",
+    "createTitle": "Create model version set",
+    "editTitle": "Edit version set",
+    "error" : {
+      "mvsModelAssociationError": "Error associating {modelName}.Please try again.",
+      "mvsModelsAssociationError": "Error associating {modelName}. Models starting from {startingModelName} to {lastModelName} are not associated.Please try again."
+    },
+    "createModelVersionSetSuccessMessage": "Successfully created a model version set",
+    "deleteConfirmation": "Are you sure you want to delete model version set?",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "moveResourceType": "model version set",
+    "labels": {
+      "description": "Description",
+      "compartment": "Compartment",
+      "name": "Version set name",
+      "status": "Status",
+      "timeCreated": "Created",
+      "selectModels": "Select the models to add to the version set",
+      "selectModelsDescription": "Select the models that you want to add to this model version set. Only models that aren't already in a version set are listed. For each model that you add to the set, version numbers are automatically generated. Version numbers (integers) are assigned in ascending order based on when the models were created, from old to new.",
+      "versionSetDetails": "Version set information",
+      "OCID": "OCID",
+      "createdBy": "Created by",
+      "numberOfVersions": "Number of versions",
+      "isDeleteRelatedModels": "Delete the models that are part of the version set."
+    }
+  },
+  "modelDeployments": {
+    "linkText": "Model deployments",
+    "detailText": "Model deployment",
+    "deactivateTitle": "Deactivate Model Deployment",
+    "deactivateConfirmation": "Are you sure you want to deactivate <strong>{displayName}</strong>?",
+    "deactivateDisclaimer": "Deactivating a model deployment updates its state to inactive.",
+    "activateTitle": "Activate model deployment",
+    "activateConfirmation": "Are you sure you want to activate <strong>{displayName}</strong>?",
+    "createTitle": "Create model deployment",
+    "editTitle": "Edit model deployment",
+    "deleteTitle": "Delete",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{modelDeploymentName}</strong>?",
+	  "deleteAgreement": "To confirm, enter <strong>{confirmationText}</strong>.",
+    "deleteWarningTitle": "The logs and the model deployment resource are deleted in sequence. The process stops if an error occurs or you don't have permission to delete the logs or the model deployment. Resources deleted up to that point cannot be restored.",
+    "modelSelectTitle":"Models",
+    "computeTitle":"Compute",
+    "loggingTitle": "Logging",
+    "shapeText": "MD",
+    "noImagesFound": "There are no images present in the selected repository",
+    "noRepositoryFound": "There are no repositories present in the selected compartment",
+    "labels": {
+      "name": "Name",
+      "modelDeploymentName": "Model deployment name",
+      "description": "Description",
+      "state": "State",
+      "computeInstanceShape": "Compute instance shape",
+      "numberOfInstances": "Number of instances",
+      "ocpuCount": "OCPU count",
+      "vmShape": "VM shape series",
+      "createdBy": "Created by",
+      "createdOn": "Created",
+      "compartment": "Compartment",
+      "compartmentOcid": "OCID",
+      "modelOcid": "Model OCID",
+      "compute": "Compute",
+      "modelSelect": "Select a model stored in the model catalog",
+      "computeSelect": "Select the VM shape and limits you want to apply to your model deployment",
+      "loggingSelect": "Select the logging configuration for access and predict logs",
+      "accessLogsConfigured": "Access logs configured",
+      "predictLogsConfigured": "Predict logs configured",
+      "bothLogsConfigured": "Access logs and predict logs configured",
+      "generalInformation": "General information",
+      "deploymentModeMode": "Mode",
+      "deploymentModeHTTPS": "Real time inference (HTTPS)",
+      "deploymentModeStreaming": "Streaming",
+      "inputStream": "Input stream",
+      "outputStream": "Output stream",
+      "computeBandwidth": "Load balancer bandwidth",
+      "modelsInformation": "Models",
+      "modelName": "Deployed model",
+      "deleteLogs": "By default we do not delete logs associated with your deployment.",
+      "deleteLogsCheckbox": "Also delete the log associated with <strong>{displayName}</strong> deployment",
+      "deploymentMode": "Deployment mode",
+      "shapeName": "Shape name",
+      "numberOCPUs": "Number of OCPUs",
+      "memoryInGBs": "Memory (GB)",
+      "bandwidthUnits": "{bandwidthMbps} Mbps",
+      "numberShowingText": "{numberShowing, plural, =0 {No items to show} one {Showing # item} other {Showing # items}}",
+      "defaultConfiguration": "Default configuration",
+      "environmentVariableKey": "Custom environment variable key",
+      "environmentVariableValue": "Value",
+      "useCustomContainerImage": "Use a custom container image",
+      "image": "Image",
+      "repository": "Repository",
+      // CMD should not be translated as it is a docker convention
+      "containerCommand": "CMD",
+      // ENTRYPOINT should not be translated as it is a docker convention
+      "containerEntrypoint": "Entrypoint",
+      "serverPort": "Server port",
+      "healthcheckPort": "Health check port",
+      "customEnvironmentVariables": "Custom environment variables",
+      "configuration": "Configuration",
+      "digest": "Digest",
+      "digestMismatchWaning": "The selected image has a different digest than the current deployed image. Make sure you selected the correct image you wish to use for the updated deployment.\nCurrent digest: {currentDigest} \nSelected digest: {selectedDigest}"
+    },
+    "actions": {
+      "create": "Create model deployment",
+      "delete": "Delete",
+      "select":"Select",
+      "edit": "Edit",
+      "moveResource": " Move resource",
+      "addEnvironmentVariable": "+ Additional custom environment key"
+    },
+    "errorMessages": {
+      "notAModel": "This resource is not a Data Science model",
+      "notFound": "The resource with this OCID cannot be found",
+      "notValidNumberOfInstances": "Number of instances is not valid",
+      "enterNumberBetweenMinAndMax": "Enter an integer number between {min} and {max}",
+      "selectShape": "Select the VM shape",
+      "errorDeletingLog": "Error deleting associated log entities",
+      "envVarKeyLimits": "Key must be alphanumeric, must start with a letter and length between 2-32 characters",
+      "envVarKeyLimitsEndingUnderscore": "Key should not end with underscore",
+      "envVarValueLimitsMandatoryKey": "Key is mandatory for value",
+      "envVarsMaxLength": "Total custom environment variable size cannot exceed 2,048 characters",
+      "cmdNEntryPointLimit": "Total length of CMD & ENTRYPOINT cannot exceed 2,048 characters",
+      "listImagesAPIFailed": "Failed to get container images",
+      "getCompartmentFailed": "Failed to get compartment information",
+      "listReposAPIFailed": "Failed to get container image repositories",
+      "listImagesApiInTenancyFailed": "Failed to get container images in tenancy"
+    },
+    "resources": {
+      "monitoring": {
+        "linkText": "Metrics",
+        "friendlyNames": {
+          "predictRequestCount": "Predict request count",
+          "predictResponseSuccessRate": "Predict response - Success rate",
+          "predictResponseStatus": "Predict response - Status",
+          "predictLatency": "Predict latency",
+          "bandwidth": "Predict bandwidth utilization",
+          "cpuUtilization": "CPU utilization",
+          "memoryUtilization": "Memory utilization",
+          "networkBytes": "Network receive and transmit bytes"
+        },
+        "metadata": {
+          "predictRequestCount": "The number of incoming requests for prediction.",
+          "predictResponseSuccessRate": "The rate at which a successful inference call is made. Calculated based on \"success * 100 / Total\"",
+          "predictResponseStatus": "Comparison of success and failure response based on HTTP status code and status family.",
+          "predictLatency": "Total time in milliseconds from request to response. This is affected by the network latency and the Predict functional code.",
+          "bandwidth": "Percentage of bandwidth utilization. Calculated based on bandwidth provisioned and consumed.",
+          "cpuUtilization": "Activity level from CPU. Expressed as a percentage of total time (busy and idle) versus idle time. A typical alarm threshold is 90 percent.",
+          "memoryUtilization": "Space currently in use. Measured by pages. Expressed as a percentage of used pages versus unused pages. A typical alarm threshold is 85 percent.",
+          "networkBytes": "Network receipt and transmission throughput. Expressed as bytes received per second."
+        }
+      },
+      "workRequests": {
+        "linkText": "Work requests"
+      },
+      "invokingYourModel": {
+        "linkText": "Invoking your model",
+        "modelEndpointTitle": "Your model HTTP endpoint",
+        "sdkTitle": "Calling your model from the OCI {sdkName}"
+      },
+      "logs": {
+        "linkText": "Logs",
+        "noLogSelected": "No log selected",
+        "labels": {
+          "category": "Category",
+          "state": "State",
+          "logName": "Log name",
+          "logGroup": "Log group"
+        },
+        "logType": {
+          "predict": "Predict",
+          "access": "Access"
+        },
+        "status": {
+          "active": "Active",
+          "inactive": "Inactive",
+          "notFound": "Not accessible"
+        }
+      }
+    },
+    "shapeFamilies": {
+      "intelSkylake": {
+        "label":"Intel",
+        "description": "Fixed OCPU count. Latest generation Intel standard shapes."
+      }
+    },
+    "selectPanes": {
+      "modelSelect": {
+        "title": "Select models",
+        "message": "Select a model to deploy from the model catalog. Either select a compartment to list models or copy a model OCID directly.",
+        "labels": {
+          "SelectByCompartment": "Select a model compartment",
+          "SelectFromCompartmentList": "Select from compartment list",
+          "SelectUsingOCID": "Using OCID",
+          "searchOCID": "Search OCID",
+          "selectFromProjectList": "Select from project list"
+        },
+        "tooltips": {
+          "searchOCID": "Add the OCID of the model that will be used for this model deployment"
+        },
+        "actions": {
+          "search": "Search"
+        },
+        "customAttributes": {
+          "numberShowingText": "{numberShowing, plural, =0 {No models to show} one {Showing # model} other {Showing # models}}"
+        }
+      },
+      "computeSelect": {
+        "title": "Select compute shape",
+        "customAttributes": {
+          "numberShowingText": "{numberShowing, plural, =0 {No shapes to show} one {Showing # shape} other {Showing # shapes}}"
+        }
+      },
+      "loggingSelect": {
+        "title": "Select logging",
+        "accessLogsTitle": "Access logs",
+        "predictLogsTitle": "Predict logs",
+        "compartment": "Compartment",
+        "logGroup": "Log group",
+        "logName": "Log name",
+        "noLogGroupsFound": "No log groups found in this compartment",
+        "noLogsFound": "No logs found in this log group",
+        "errorFetchingLogs": "An error occurred when fetching logs for the above log group",
+        "learnMore": "Learn more",
+        "tooltips": {
+          "accessLogs": "Access logs captures detailed information about requests sent to the model endpoint such as the time the request was received, error codes, etc.",
+          "predictLogs": "Predict logs originate from custom code execution and can be emitted by sending messages to stdout/stderr in the model inference code base."
+        }
+      }
+    },
+    "deploymentMode": {
+      "helpText": "Select the serving mode to use with this model deployment.",
+      "https": {
+        "label": "Real time inference (HTTPS)",
+        "description": "When serving the model deployment as a web endpoint.",
+        "helpText": "Select the bandwidth supported by the load balancer (in Mbps)."
+      },
+      "streaming": {
+        "label": "Streaming mode",
+        "description": "When serving the model deployment to a Streaming stream.",
+        "inputHelpText": "Select a streaming service stream for your input",
+        "outputHelpText": "Select a streaming service stream for your output",
+        "compartmentLabel": "Compartment",
+        "streamLabel": "Stream"
+      }
+    }
+  },
+  "uploadModelArtifact":
+  {
+    "information":
+    {
+      "modelArtifactInfo" : "A <a target=\"_blank\" href=\"{href}\">model artifact</a> is a ZIP archive of the files necessary to run your models. The artifact must have these two files :",
+      "line1": "score.py which defines the contract of your model.",
+      "line2": "runtime.yaml which describes the conda environment in which the model should run."
+    },
+    "resourceType" : "Model artifact",
+    "uploadSuccessNotification" : "Successfully uploaded model artifact",
+    "uploadFailureNotification" : "Model artifact upload failure"
+  },
+  "workRequests": {
+    "linkText": "Work Requests",
+    "detailText": "Work Requests",
+    "breadCrumbsText": "Work Requests Details",
+    "shapeText": "WR",
+    "progressMsgText": "{count, number}% completed",
+    "labels": {
+      "operation": "Operation",
+      "state": "State",
+      "completionPercentage": "% Complete",
+      "timeAccepted": "Accepted",
+      "timeStarted": "Started",
+      "timeFinished": "Finished"
+    },
+    "status": {
+      "ACCEPTED": "Accepted",
+      "IN_PROGRESS": "In progress",
+      "FAILED": "Failed",
+      "SUCCEEDED": "Succeeded",
+      "CANCELING": "Canceling",
+      "CANCELED": "Canceled"
+    },
+    "resources": {
+      "logs": {
+        "linkText": "Log Messages",
+        "labels": {
+          "message": "Message",
+          "timestamp": "Timestamp"
+        },
+        "errors": {
+          "errorFetchingLogs": "An error occurred when fetching logs for the above work request."
+        }
+      },
+      "errors": {
+        "linkText": "Error Messages",
+        "labels": {
+          "code": "Code",
+          "message": "Message",
+          "timestamp": "Timestamp"
+        },
+        "errors": {
+          "errorFetchingErrors": "An error occurred when fetching error messages for the above work request."
+        }
+      },
+      "associatedResources": {
+        "linkText": "Associated Resources",
+        "labels": {
+          "resourceName": "Name",
+          "resourceType": "Resource Type",
+          "ocid": "OCID"
+        },
+        "errors": {
+          "errorFetchingAssociatedResources": "An error occured when fetching associated resources for the above work request."
+        }
+      }
+    }
+  },
+  "sidePanels": {
+    "scope": {
+      "title": "Scope"
+    },
+    "filters": {
+      "title": "Filters",
+      "lifecycleState": {
+        "ACTIVE": "Active",
+        "INACTIVE": "Inactive",
+        "DELETED": "Deleted",
+        "DELETING": "Deleting",
+        "FAILED": "Failed",
+        "CREATING": "Creating",
+        "UPDATING": "Updating",
+        "NEEDS_ATTENTION": "Needs attention",
+        "ACCEPTED": "Accepted",
+        "IN_PROGRESS": "In progress",
+        "SUCCEEDED": "Succeeded",
+        "CANCELING": "Canceling",
+        "CANCELED": "Canceled",
+        "WAITING": "Waiting",
+        "SKIPPED": "Skipped"
+      },
+      "fullDate": "{currentDateTime, date, fullDateTime}",
+      "createdStartDate": "Created after",
+      "createdEndDate": "Created before",
+      "dateRangeToday": "Today",
+      "dateRangeYesterday": "Yesterday",
+      "dateRangePastThreeDays": "Past 3 days",
+      "allUsers": "All users",
+      "all": "All",
+      "modelVersionSetFilter": "modelVersionSet-search-filter",
+      "versionLabelFilter": "Label-search-filter"
+    },
+    "modelSelect": {
+      "title": "Select Models",
+      "message": "Select a model to deploy from the model catalog. Either select a compartment to list models or copy a model OCID directly.",
+      "labels": {
+        "SelectByCompartment": "Select a Model Compartment",
+        "SelectFromCompartmentList":"Select From Compartment List",
+        "SelectUsingOCID":"Using OCID",
+        "searchOCID": "Search OCID"
+      },
+      "tooltips": {
+        "searchOCID": "Add the OCID of the Model that will be used for this model deployment"
+      },
+      "actions": {
+        "search": "Search"
+      }
+    }
+  },
+  "validation": {
+    "required": "This is a required field.",
+    "invalidValue": "Invalid value entered.",
+    "minLength": "This must be at least {min, number} characters.",
+    "maxLength": "This cannot exceed {max, number} characters.",
+    "maxSize" : "{type} size limit exceeded.",
+    "minSize" : "{type} size cannot be zero.",
+    "invalidJson": "{type} only accepts a valid {fileType} string. Verify the {fileType} syntax.",
+    "invalidRangeValue": "Select a value between {min} and {max}.",
+    "requiredPipelineMlStepJob": "This is a required field. Please select a compartment that has jobs.",
+    "byocEnvVar" : "CONTAINER_CUSTOM_IMAGE is required as an environment variable key."
+    },
+  "upload": {
+    "progressMsgText": "{count, number}% completed",
+    "size": {
+      "bytes": "{size, number} bytes",
+      "gib": "{size, number} GB",
+      "kib": "{size, number} KB",
+      "mib": "{size, number} MB",
+      "pib": "{size, number} PB",
+      "tib": "{size, number} TB"
+    },
+    "failed": "Upload Failed",
+    "finished": "Finished"
+  },
+  "dates": {
+    "fullDateTime": "{date, date, fullDateTime}"
+  },
+  "metricsChartList": {
+    "cpuMetadata": "Activity level from CPU. Expressed as a percentage of total time (busy and idle) versus idle time. A typical alarm threshold is 90 percent.",
+    "memoryMetadata": "Space currently in use. Measured by pages. Expressed as a percentage of used pages versus unused pages. A typical alarm threshold is 85 percent.",
+    "networkInMetadata": "Network receipt throughput. Expressed as bytes received per second.",
+    "networkOutMetadata": "Network transmission throughput. Expressed as bytes transmitted per second.",
+    "cpuFriendly": "CPU Utilization",
+    "memoryFriendly": "Memory Utilization",
+    "networkInFriendly": "Network Receive Bytes",
+    "networkOutFriendly": "Network Transmit Bytes"
+  },
+  "dsPrereq": {
+    "title": "Data Science Prerequisites",
+    "showMore": "Show more information",
+    "showLess": "Show less information",
+    "intro": "Before you can start using Data Science, your tenancy administrator should set up the following networking, dynamic group, and policies.",
+    // VCN is an acronym for Virtual Cloud Network
+    "step1Title": "<strong>Step 1) Create VCN and Subnets</strong>",
+    // VCN is an acronym for Virtual Cloud Network. This is always followed by "Virtual Cloud Networks".
+    "step1CreateVcn": "Create a VCN and subnets using",
+    "step1Vcn": "Virtual Cloud Networks",
+    // VCN is an acronym for Virtual Cloud Network
+    "step1VcnWizard": "Start VCN Wizard",
+    // VCN is an acronym for Virtual Cloud Network
+    "step1VcnOption": "VCN with Internet Connectivity option.",
+    // NAT is an acronym for Network Address Translation
+    "step1Natgw": "The Networking Quickstart option automatically creates the necessary <em>private</em> subnet with a NAT gateway.",
+    "step2Title": "<strong>Step 2) Create Dynamic Group</strong>",
+    "step2CreateDg": "Create a dynamic group with the following matching rule:",
+    "step3Title": "<strong>Step 3) Create Policies</strong>",
+    // This is always followed by "policy".
+    "step3Create": "Create a",
+    // This is always preceeded by "Create a" and followed by "in the root compartment with the following statements."
+    "step3Policy": "policy",
+    // This is always preceeded by "Create a policy"
+    "step3InRoot": "in the root compartment with the following statements:",
+    "step31Title": "<strong>3.1 Service Policies</strong>",
+    "step32Title": "<strong>3.2 Non-Administrator User Policies</strong>",
+    "step33Title": "<strong>3.3 Dynamic Group Policies</strong>",
+    // This is always followed by "documentation"
+    "forMoreInfo": "For more information on configuring your tenancy, including how to restrict access to a specific compartment, see the",
+    "documentation": "documentation"
+  },
+  "pipelineRun": {
+    "shapeText": "PR",
+    "linkText": "Pipeline runs",
+    "detailText": "Pipeline run",
+    "deleteTitle": "Delete confirmation",
+    "deleteFailed": "This pipeline run couldn‘t be removed because active resources still exist.",
+    "deleteInProgress": "Checking for active resources...",
+    "deleteConfirmation": "Are you sure you want to delete the <strong>{name}</strong> pipeline run?",
+    "cancelTitle": "Cancel pipeline run",
+    "cancelConfirmation": "Are you sure you want to cancel the <strong>{name}</strong> pipeline run?",
+    "cancelAgreement": "Type <strong>{confirmationText}</strong> to confirm cancel.",
+    "deleteWarningTitle": "All step runs of this pipeline run will also be deleted.",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "pipelineRunLoggingTitle": "Logging configuration override",
+    "createPipelineRunSuccess": "Successfully started {name}.",
+    "editPipelineRunSuccess": "Successfully updated {name}.",
+    "editTitle": "Edit pipeline run",
+    "labels": {
+      "description": "Description",
+      "name": "Name",
+      "state": "State",
+      "createdBy": "Created by",
+      "timeAccepted": "Time accepted",
+      "timeStarted": "Time started",
+      "timeFinished": "Time finished",
+      "timeCreated": "Created on",
+      "numberShowingText": "{numberShowing, plural, =0 {No pipeline run to show} one {Showing # pipeline run} other {Showing # pipeline runs}}",
+      "pipelineConfigurationOverride": "Pipeline configuration override",
+      "pipelineRunInformation": "General information",
+      "pipelineStepConfigurationOverride": "Pipeline step configuration override"
+    },
+    "actions": {
+      "start": "Start a pipeline run",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "clone": "Clone",
+      "cloneAJobRun": "Clone a pipeline run",
+      "cloneJobRun": "Clone pipeline run",
+      "delete": "Delete",
+      "create": "Start a pipeline run",
+      "moveResource": "Move resource"
+    },
+    "hints": {
+      "maxRuntimeInMinutes": "The runtime must be between {minSize, number} and {maxSize, number} minutes."
+    },
+    "monitoring": {
+      "linkText": "Metrics",
+      "friendlyNames": {
+        "cpuUtilization": "CPU Utilization",
+        "memoryUtilization": "Memory Utilization",
+        "networkBytesIn": "Network Bytes In",
+        "networkBytesOut": "Network Bytes Out",
+        "diskUtilization": "Disk Utilization"
+      },
+      "metadata": {
+        "cpuUtilization": "Pipeline step run CPU/GPU utilization",
+        "memoryUtilization": "Pipeline step run memory utilization",
+        "networkBytesIn": "Pipeline step run network bytes in",
+        "networkBytesOut": "Pipeline step run network bytes out",
+        "diskUtilization": "Pipeline step run disk utilization"
+      }
+    }
+  },
+  "pipelineStep": {
+    "linkText": "Steps",
+    "editPipelineStepSuccess": "Successfully updated {name}.",
+    "none": "None",
+    "labels": {
+      "stepInformation": "Step Information",
+      "generalInformation": "General information",
+      "stepArtifact": "Step artifact",
+      "description": "Description",
+      "type": "Type",
+      "dependsOn": "Depends on",
+      "job": "Job",
+      "defaultConfiguration": "Default Configuration",
+      "tag": "Tag",
+      "infrastructureConfiguration": "Infrastructure configuration",
+      "shapeName": "Shape",
+      "blockStorage": "Block Storage",
+      "stepConfiguration": "Step configuration",
+      "buildByJobs": "Build by jobs",
+      "buildByJobsDescription": "Use an existing job as a pipeline step.",
+      "buildByScript": "Build by script",
+      "buildByScriptDescription": "Use a script as a pipeline step.",
+      "computeLabels": {
+        "shapeName": "Shape name",
+        // OCPU is an acronym for Oracle Compute Unit
+        "numberOCPUs": "Number of OCPUs",
+        // GB is an acronym for gigabyte
+        "memoryInGBs": "Memory (GB)",
+        "fastLaunchCapable": "Fast launch capable",
+        "isFastLaunchCapable": "Yes",
+        "isNotFastLaunchCapable": "No"
+      },
+      "numberShowingText": "{numberShowing, plural, =0 {No pipeline step to show} one {Showing # pipeline step} other {Showing # pipeline steps}}"
+    },
+    "uploadStepArtifact": "Upload step artifact",
+    "successfullyUploadedArtifact": "Successfully uploaded step artifact.",
+    "createPanelTitle": "Add pipeline step",
+    "deleteTitle": "Delete pipeline step",
+    "editPanelTitle": "Edit pipeline step",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{pipelineStepName}</strong>?",
+    "deleteWarningTitle": "The following steps depend on the above step: <strong>{dependentStepNames}</strong>",
+    "defaultText": "Add steps to create the pipeline workflow. Each step can have dependencies on other steps to define the workflow order.",
+    "learnMore": "Learn more",
+    "hints": {
+      "dependsOn": "Select other steps from the pipeline to be completed before running this step.",
+      "jobName": "Select an existing job to be run as the pipeline step.",
+      // GB is an acronym for gigabyte
+      "blockStorageSize": "Must be between {minSize, number} and {maxSize, number} GB."
+    },
+    "tooltips": {
+      "artifactUploaded": "Step artifact was already uploaded."
+    },
+    "errorMessages": {
+      "noHeadingNumber": "Cannot begin with number",
+      "noNonAlphanumericOrUnderscoreOrSpace": "Cannot have characters other than letters, numbers, spaces and underscores.",
+      "noDuplicates": "Can't have duplicate step names."
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "downloadArtifact": "Download artifact",
+      "uploadArtifact": "Upload artifact"
+    }
+  },
+  "pipelineStepRun": {
+    "linkText": "Step runs",
+    "labels": {
+      "state": "State",
+      "lifecycleDetails": "Lifecycle details",
+      "name": "Name",
+      "timeStarted": "Time started",
+      "timeFinished": "Time finished",
+      "runInformation": "Pipeline run information",
+      "numberShowingText": "{numberShowing, plural, =0 {No pipeline step run to show} one {Showing # pipeline step run} other {Showing # pipeline step runs}}"
+    }
+  },
+  "pipelineStepRunDetails": {
+    "detailText": "Pipeline step run",
+    "generalInformation" : "General Information",
+    "actions": {
+      "start": "Start a pipeline step run.",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "clone": "Clone",
+      "delete": "Delete",
+      "create": "Start a pipeline step run."
+    },
+    "labels": {
+      "name": "Name",
+      "status": "Status",
+      "jobRunLink" : "Job run",
+      "type": "Type",
+      "lifecycleDetails": "Lifecycle details",
+      "createdBy": "Created by",
+      "timeStarted": "Time started",
+      "timeFinished": "Time finished",
+      "runtimeConfiguration": "Runtime configuration",
+      "maxRuntimeInMinutes": "Maximum runtime (in minutes)",
+      "customEnvironmentVariables": "Custom environment variables",
+      "stepDefinition" : "Step definition",
+      "stepRunConfiguration": "Default Configuration",
+      "stepRunConfigurationOverride": "Override Configuration",
+      "infrastructureConfiguration": "Infrastructure configuration",
+      "shapeName": "Shape",
+      "blockStorage": "Block Storage",
+      "numberShowingText": "{numberShowing, plural, =0 {No pipeline step run to show} one {Showing # pipeline step run} other {Showing # pipeline step runs}}"
+    }
+  },
+  "pipelines": {
+    "createTitle": "Create pipeline",
+    "computeTitle":"Compute shape",
+    "linkText": "Pipelines",
+    "editPipelineSuccess": "Successfully updated {name}.",
+    "editTitle": "Edit pipeline",
+    "detailText": "Pipeline",
+    "pipelineRunLoggingTitle": "Logging configuration override",
+    "deleteTitle": "Delete pipeline",
+    "deleteFailed": "This pipeline couldn‘t be removed because active resources still exist.",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{displayName}</strong> and its associated pipeline runs?",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "deleteWarningTitleWithDeletePipelineRun": "Deleting this pipeline also deletes any associated pipeline runs. The deletion fails if any associated pipeline runs are not in DELETED state or delete related pipeline runs is false or if you do not have permission to delete.",
+    "deleteWarningTitle": "Deleting this pipeline also deletes any associated pipeline runs. The deletion fails if any associated pipeline runs aren't in a DELETED state, delete related pipeline runs is false, or you don't have permission to delete.",
+    "deleteWarningTitleWithDeleteJobRun": "Deleting this pipeline also deletes any associated pipeline runs and job runs. The deletion fails if any associated pipeline runs aren't in a DELETED state, delete related pipeline runs is false, or you don't have permission to delete.",
+    "deleteInProgress": "Checking for active resources...",
+    "shapeText": "P",
+    "deleteRelatedPipelineRuns": "Delete related pipeline runs",
+    "deleteRelatedJobRuns": "Delete related job runs",
+    "removeResourcesWarning": "Pipeline can only be deleted if all the pipeline runs associated with it are already in a DELETED state. Select delete related pipeline runs if there are pipeline runs that are not in a DELETED state.",
+    "deletePipelineRunWarning": "Pipeline runs can only be deleted when in a SUCCEEDED, FAILED or CANCELED state.",
+    "uploadArtifactFailure": "Error occurred while uploading step artifact. Please check the failed step and go to the step details page to retry the upload.",
+    "pipelineStepArtifactWarning": "Pipeline can't run until all script steps have artifacts uploaded. Please upload the step artifact from the step details page.",
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "select": "Select",
+      "create": "Create pipeline",
+      "moveResource": "Move resource",
+      "addEnvironmentVariable": "Additional custom environment key",
+      "addSteps": "Add pipeline steps",
+      "editJob": "Edit job"
+    },
+    "labels": {
+      "maxRuntimeInMinutes": "Maximum runtime (in minutes)",
+      "dependsOn": "Depends on",
+      "stepName": "Step name",
+      "stepArtifact": "Step artifact",
+      "stepDescription": "Step description",
+      "selectJob": "Select a job",
+      "loggingSelect": "Select the configuration for logging your pipeline.",
+      "description": "Description",
+      "pipelineSteps": "Pipeline steps",
+      "defaultConfiguration": "Default configuration",
+      "stepConfiguration": "Step configuration",
+      "name": "Name",
+      "state": "State",
+      "createdBy": "Created by",
+      "timeCreated": "Created on",
+      "numberShowingText": "{numberShowing, plural, =0 {No pipelines to show} one {Showing # pipeline} other {Showing # pipelines}}",
+      "pipelineDetails": "Pipeline details",
+      "pipelineInformation": "General information",
+      "pipelineRunLoggingSelect": "Select the override configuration for logging your pipeline run.",
+      "compartment": "Compartment",
+      "environmentVariableKey" : "Custom environment variable key",
+      "environmentVariableValue" : "Value",
+      "commandLineArguments": "Command line arguments",
+      "uploadArtifact": "Upload step artifact",
+      // This file selector is always followed by "select a file"
+      "fileSelectorText": "Drop a file or",
+      // This file selector is always preceeded by "Drop a file or"
+      "fileSelectorBrowseLinkText": "select a file.",
+      "uploadFileTypeRequirementText": "File extensions must be .py, .sh, .tar.gz, or .zip.",
+      "uploadFileTypeError" : "Invalid file type.",
+      "entryPoint": "Entry point",
+      "condaEnvironmentType": "Conda environment type",
+      "condaEnvironmentSlugName": "Conda environment slug name",
+      "blockStorage": "Block Storage",
+      "computeSelect": "Select the default VM shape you want to use for your pipeline.",
+      "infrastructureConfiguration": "Infrastructure configuration",
+      "shapeName": "Shape",
+      "numberOCPUs": "Number of OCPUs",
+      "memoryInGBs": "Memory (GB)"
+    },
+    "hints": {
+      "uniqueStepName": "Step name is required and must be unique in this pipeline.",
+      "noJobSelected": "No job selected",
+      "maxRuntimeInMinutes": "The runtime must be between {minSize, number} and {maxSize, number} minutes (default {maxSize, number}).",
+      "uploadStepArtifact": "Upload your step artifact here",
+      "entryPoint": "Provide the file name to run when there is more than one.",
+      "computeShape": "Compute shape must be provided if block storage value exists",
+      "blockStorage": "Block storage must be provided if a compute shape is selected",
+      "stepEntryPoint": "This is a required field when the the uploaded step artifact type is tar.gz or .zip"
+    },
+    "tooltips": {
+      "autoLogCreation": "Data Science automatically creates a new log when a pipeline run starts, and then logs messages to it.",
+      "environmentVariables_1": "Service recognized user provided environment variables: \n\n",
+      "environmentVariables_2": "{conda_env_type}: Conda environment type - \"{service}\" or \"{published}\" \n",
+      "environmentVariables_3": "{conda_env_slug}: Service conda environment slug \n",
+      "environmentVariables_4": "{conda_env_region}: Published conda environment region \n",
+      "environmentVariables_5": "{conda_env_object_name}: Published conda environment object name \n",
+      "environmentVariables_6": "{conda_env_namespace}: Published conda environment Object Storage namespace \n",
+      "environmentVariables_7": "{conda_env_bucket}: Published conda environment Object Storage bucket \n"
+    },
+    "logs": {
+      "linkText": "Logs"
+    }
+  },
+  "jobs": {
+    "linkText": "Jobs",
+    "detailText": "Job",
+    "genericMissingArtifact": "Something unexpected has occurred. Artifact details are not available.",
+    "missingArtifact": "Job artifact could not be uploaded.",
+    "shapeText": "J",
+    "sizeInGigabytes": "{size, number} GB",
+    "createTitle": "Create job",
+    "editTitle": "Edit job",
+    "deleteFailed": "This job could not be deleted because some associated job runs are still in progress or the user does not have the correct permissions.",
+    "deleteTitle": "Delete job",
+    "deleteConfirmation": "Are you sure you want to delete <strong>{displayName}</strong> and its associated job runs?",
+    "deleteWarningTitle": "Deleting this job also deletes any associated job runs. The deletion fails if any associated job runs are in progress or if you do not have permission to delete.",
+    "deleteAgreement": "Type <strong>{confirmationText}</strong> to confirm delete.",
+    "deleteInProgress": "Checking for active resources...",
+    "editJobSuccess": "Successfully updated {name}.",
+    // This is the title for the component which selects compute (or virtual machine) shapes
+    "computeTitle":"Compute shape",
+    "loggingTitle": "Logging",
+    "jobRunLoggingTitle": "Logging configuration override",
+    "loggingEnabled": "Logging enabled",
+    "loggingDisabled": "Logging disabled",
+    "selectLogging": "Select logging",
+    "noLogGroupsFound": "No log groups found in this compartment",
+    "noLogsFound": "No logs found in this log group",
+    "noDefaultLogGroupSelected": "No default log group is selected",
+    "loggingIsNotEnabled": "Logging is not enabled",
+    "noDefaultLogSelected": "No default log is selected",
+    "autoLoggingEnabled": "Automatic creation of logs is enabled",
+    "loggingConfiguration": "Logging configuration",
+    "loggingConfigurationOverride": "Logging configuration override",
+    "successfullyUploadedArtifact": "Successfully uploaded job artifact.",
+    "defaultLogGroup": "Log group selected: {groupName}.",
+    "defaultLogGroupAndAutoLog": "Log group selected: {groupName}. Automatic logging enabled.",
+    "defaultLogGroupAndLog": "Log group selected: {groupName}. Log selected: {logName}",
+    "bringYourOwnContainer": "Bring your own container",
+    "nullableArtifactForByoc": "No artifact available as job is configured to use \"bring your own container\"",
+    "actions": {
+      "create": "Create job",
+      "edit": "Edit",
+      "downloadArtifact": "Download job artifact",
+      "uploadArtifact": "Upload job artifact",
+      "delete": "Delete",
+      "retryUpload": "Retry upload",
+      "addEnvironmentVariable": "+ Additional custom environment key",
+      "select": "Select",
+      "moveResource": "Move resource",
+      "editArtifact": "Edit job artifact"
+    },
+    "labels": {
+      "numberShowingText": "{numberShowing, plural, =0 {No Jobs to show} one {Showing # Job} other {Showing # Jobs}}",
+      "name": "Name",
+      "state": "State",
+      "createdBy": "Created by",
+      "timeCreated": "Created on",
+      "jobArtifact": "Job artifact",
+      "jobInformation": "General information",
+      "jobInfrastructure": "Infrastructure configuration",
+      "computeShape": "Compute instance shape",
+      "storage": "Storage",
+      // VCN is an acronym for Virtual Cloud Network
+      "vcn": "VCN",
+      "subnet": "Subnet",
+      "defaultConfiguration": "Default configuration",
+      "commandLineArguments": "Command line arguments",
+      "maxRuntimeInMinutes": "Maximum runtime (in minutes)",
+      "customEnvironmentVariables": "Custom environment variables",
+      "description": "Description",
+      "objectStorageInfo": "The total amount of Object Storage that you are using including the {gb, number} GB required by the Data Science service.",
+      "compartment": "Compartment",
+      // This file selector is always followed by "select a file"
+      "fileSelectorText": "Drop a file or",
+      // This file selector is always preceeded by "Drop a file or"
+      "fileSelectorBrowseLinkText": "select a file.",
+      "instanceShape": "Compute instance shape",
+      "blockStorageSize": "Size must be between {minSize, number} GB and {maxSize, number} GB ({maxSizeTB, number} TB)",
+      "uploadJobArtifact": "Upload job artifact",
+      "additionalStorage": "Storage",
+      "environmentVariableKey": "Custom environment variable key",
+      "byocVariableKey": "Bring your own container variable required key",
+      "environmentVariableValue": "Value",
+      "shapeName": "Shape name",
+      // OCPU is an acronym for Oracle Compute Unit
+      "numberOCPUs": "Number of OCPUs",
+      // GB is an acronym for gigabyte
+      "memoryInGBs": "Memory (GB)",
+      // VM is an acronym for Virtual Machine
+      "vmShape": "VM shape",
+      // VM is an acronym for Virtual Machine
+      "computeSelect": "Select the default VM shape you want to use for your job runs.",
+      // OCPU is an acronym for Oracle Compute Unit
+      "computeSelectLabel": "{cores, number} core OCPU, {gb, number} GB memory",
+      // CPU is an acronym for Central Processing Unit
+      "loggingSelect": "Select the configuration for logging your job.",
+      "jobRunLoggingSelect": "Select the override configuration for logging your job.",
+      "enableLogging": "Enable logging",
+      "automaticLogging": "Automatic logging",
+      "enableAutoLogCreation": "Enable automatic log creation",
+      "selectALog": "Select a log",
+      "logGroup": "Log group",
+      "logName": "Log name",
+      "noLogGroupSelected": "No log group selected",
+      "noLogSelected": "No log selected",
+      "defaultLogGroup": "Default log group",
+      "defaultLog": "Default log",
+      "loggingDetails": "Logging details",
+      "log": "Log",
+      "uploadFileTypeRequirementText": "File extensions must be .py, .sh, .tar.gz, or .zip.",
+      "uploadFileTypeError": "Invalid file type.",
+      "jobDetails": "Job details"
+    },
+    "hints": {
+      // VCN is an acronym for Virtual Cloud Network
+      "vcnMissingPermissionsHoverText": "Request your admin for access to read the Subnet resource to see its associated VCN",
+      // MiB is an acronym for mebibyte
+      "jobArtifact": "Artifact uploads from the console are limited to less than {maxSize, number} MiB",
+      "storageHint": "Must be between {minSize, number} and {maxSize, number} GB",
+      "maxRuntimeInMinutes": "The runtime must be between {minSize, number} and {maxSize, number} minutes"
+    },
+    "shapeFamilies": {
+      "intelSkylake": {
+        "label":"Intel",
+        // OCPU is an acronym for Oracle Compute Unit
+        "description": "Fixed OCPU count. Latest generation Intel Standard shapes."
+      }
+    },
+    "selectPanes": {
+      "computeSelect": "Select compute"
+    },
+    "tooltips": {
+      "autoLogCreation": "Data Science automatically creates a new log when a job run starts, and then logs messages to it.",
+      "environmentVariables_1": "Service recognized user provided environment variables: \n\n",
+      "environmentVariables_2": "{conda_env_type}: Conda environment type - \"{service}\" or \"{published}\" \n",
+      "environmentVariables_3": "{conda_env_slug}: Service conda environment slug \n",
+      "environmentVariables_4": "{conda_env_region}: Published conda environment region \n",
+      "environmentVariables_5": "{conda_env_object_name}: Published conda environment object name \n",
+      "environmentVariables_6": "{conda_env_namespace}: Published conda environment Object Storage namespace \n",
+      "environmentVariables_7": "{conda_env_bucket}: Published conda environment Object Storage bucket \n",
+      "environmentVariables_8": "{job_run_entrypoint}: Required for {zip} or {tar} files. Specifies the entrypoint file in the artifact to be executed \n",
+      "environmentVariables_9": "{container_entrypoint}: The container run {ENTRYPOINT} as a list of strings \n",
+      "environmentVariables_10": "{container_cmd}: The container run {CMD} as a list of strings."
+    }
+  },
+  "jobRuns": {
+    "linkText": "Job runs",
+    "detailText": "Job run",
+    "shapeText": "JR",
+    "createJobRunSuccess": "Successfully started {name} job run.",
+    "editTitle": "Edit job run",
+    "cancelTitle": "Cancel job run",
+    "cancelConfirmation": "Are you sure you want to cancel the job run <strong>{name}</strong>?",
+    "deleteTitle": "Delete confirmation",
+    "deleteConfirmation": "Are you sure you want to delete the job run <strong>{name}</strong>?",
+    "loggingOverrideConfigured": "Logging override configured",
+    "cancelAgreement": "Type <strong>{confirmationText}</strong> to confirm cancel.",
+    "actions": {
+      "start": "Start a job run",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "delete": "Delete",
+      "clone": "Clone",
+      "cloneAJobRun": "Clone a job run",
+      "cloneJobRun": "Clone job run"
+    },
+    "labels": {
+      "name": "Name",
+      "state": "State",
+      "lifecycleDetails": "Lifecycle details",
+      "createdBy": "Created by",
+      "timeAccepted": "Time accepted",
+      "numberShowingText": "{numberShowing, plural, =0 {No job runs to show} one {Showing # job run} other {Showing # job runs}}",
+      "jobRunInformation": "General information",
+      "timeStarted": "Time started",
+      "timeFinished": "Time finished",
+      "jobConfigurationOverride": "Job configuration override",
+      "runtimeConfiguration": "Runtime configuration",
+      "overrideConfiguration": "Override configuration",
+      "jobRunDetails": "Job run details"
+    },
+    "monitoring": {
+      "linkText": "Metrics",
+      "friendlyNames": {
+        "cpuUtilization": "CPU Utilization",
+        "memoryUtilization": "Memory Utilization",
+        "networkBytesIn": "Network Bytes In",
+        "networkBytesOut": "Network Bytes Out",
+        "diskUtilization": "Disk Utilization",
+        "gpuUtilization": "GPU Utilization"
+      },
+      "metadata": {
+        "cpuUtilization": "Job run container CPU utilization",
+        "memoryUtilization": "Job run container memory utilization",
+        "networkBytesIn": "Job run container network bytes in",
+        "networkBytesOut": "Job run container network bytes out",
+        "diskUtilization": "Job run container disk utilization",
+        "gpuUtilization": "Job run container GPU utilization"
+      }
+    }
+  },
+  "operationType": {
+    "NOTEBOOK_SESSION_CREATE" : "Create notebook session",
+    "NOTEBOOK_SESSION_DELETE" : "Delete notebook session",
+    "NOTEBOOK_SESSION_ACTIVATE" : "Activate notebook session",
+    "NOTEBOOK_SESSION_DEACTIVATE" : "Deactivate notebook session",
+    "MODEL_DEPLOYMENT_CREATE" : "Create model deployment",
+    "MODEL_DEPLOYMENT_DELETE" : "Delete model deployment",
+    "MODEL_DEPLOYMENT_ACTIVATE" : "Activate model deployment",
+    "MODEL_DEPLOYMENT_DEACTIVATE" : "Deactivate model deployment",
+    "MODEL_DEPLOYMENT_UPDATE" : "Update model deployment",
+    "PROJECT_DELETE" : "Delete project",
+    "WORKREQUEST_CANCEL": "Cancel work request",
+    "JOB_DELETE": "Delete job"
+  },
+  "computePanels": {
+    "title":"Select compute",
+    "description": "A <a target=\"_blank\" href=\"{href}\">shape</a> is a template that determines the number of CPUs, amount of memory, and other resources to a newly created instance.",
+    "flexSliderHint": "You can customize the number of OCPUs and the amount of memory allocated to a flexible shape. The other resources scale proportionately. <a target=\"_blank\" href=\"{href}\">Learn more about flexible shapes</a>.",
+    "ocpuSliderLabel": "Number of OCPUs",
+    "memorySliderLabel": "Amount of memory (GB)",
+    "customConfiguration": "Custom configuration",
+    "customConfigurationDescription": "You select any Compute shape configuration for the job.",
+    "fastLaunch": "Fast launch",
+    "fastLaunchDescription": "A predefined set of Compute shapes that allows you to start a job as fast as possible as long as there are shapes available.",
+    "fastLaunchEnabled": "Fast launch enabled",
+    "shapeTableShapeNameColumn": "Shape name",
+    "shapeTableMemoryColumn": "Memory (GB)",
+    "shapeTableOCPUsColumn": "Number of OCPUs",
+    "changeShape": "Change shape",
+    "selectShape": "Select shape",
+    "radioGroup": {
+      "label": "VM shape series",
+      "amdRomeHeader": "AMD",
+      "amdRomeDescription": "Flexible OCPU count. AMD processors.",
+      "intelSkylakeHeader": "Intel",
+      "intelSkylakeDescription": "Flexible OCPU count. Intel processors.",
+      "nvidiaGpuHeader": "NVIDIA GPU",
+      "nvidiaGpuDescription": "For compute intensive workloads. Each P100 GPU or V100 Tensor Core GPU comes with 16 GB of GPU memory.",
+      "legacyHeader": "Previous Generation",
+      "legacyDescription": "Earlier generation shapes.",
+      "previousGenerationHeader": "Specialty and Previous Generation",
+      "previousGenerationHeaderDescription": "Earlier generation Intel standard shapes."
+    },
+    "wholeNumberErrorMessage": "Value must be a whole number."
+  },
+  "shared": {
+    "networkingResources": {
+      "networkingResources": "Networking resources",
+      "networkingTypeDescription": "<strong>Networking type:</strong> {name}",
+      "networkingType": "Networking type",
+      "customNetworking": "Custom networking",
+      "customNetworkingDescription": "Customize your networking resources.",
+      "defaultNetworking": "Default networking",
+      "defaultNetworkingDescription": "Default egress to the public internet."
+    },
+    "shapes": {
+      "x9Processor": "3.0 GHz Intel® Xeon® Gold 6354 (Ice Lake)",
+      "e4Processor": "2.55 GHz AMD EPYC™ 7J13 (Milan)",
+      "e3Processor": "2.25 GHz AMD EPYC™ 7742 (Rome)",
+      "a1Processor": "3.0 GHz Ampere® Altra™",
+      "bmGpu4Processor": "2.9 GHz AMD EPYC™ 7542 (Rome)",
+      "standard2Processor": "2.0 GHz Intel® Xeon® Platinum 8167M (Skylake)"
+    }
+  }
+}

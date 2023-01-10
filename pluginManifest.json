@@ -1,0 +1,8 @@
+{
+  "name": "data-science",
+  "path": "/data-science",
+  "repository": "ssh://git@bitbucket.oci.oraclecorp.com:7999/odsc/odsc-console.git",
+  "ticketQueue": "https://jira-sd.mc1.oracleiaas.com/projects/ODSC/queues",
+  "runbook": "https://confluence.oci.oraclecorp.com/display/ODSC/ODSC+Guide%3A+Console+Deployment",
+  "version": "0.0.0"
+}

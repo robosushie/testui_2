@@ -1,0 +1,25 @@
+{
+  "plugins": {
+    "data-science": {
+      "name": "data-science",
+      "path": "/data-science",
+      "url": "https://localhost:8484/index.tpl.html",
+      "type": "Sandbox"
+    },
+    "search": {
+      "name": "search",
+      "path": "/search",
+      "url": "https://localhost:8486/index.tpl.html",
+      "type": "Sandbox"
+    }
+  },
+  "features": {
+    "plugin-contextual-support": true,
+    "jobs-mon-one-enabled": true,
+    "jobs-cloud-editor-enabled": true,
+    "code-editor": true,
+    "cloudshellBackend": "test",
+    "cse-enabled": true,
+    "fs-endpoint": "https://p37qufb67mpyykzbbzi6tdvvgy.apigateway.us-ashburn-1.oci.customer-oci.com/20230101"
+  }
+}

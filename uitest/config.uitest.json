@@ -1,0 +1,34 @@
+{
+  "driverInfo": {
+    "hub": "",
+    "url": "https://console.us-ashburn-1.oraclecloud.com",
+    "pluginName": "/data-science/",
+    "pluginOverride": "telemetry=false&configoverride=%7B%22plugins%22%3A%7B%22data-science%22%3A%7B%22name%22%3A%22data-science%22%2C%22path%22%3A%22%2Fdata-science%22%2C%22url%22%3A%22https%3A%2F%2Flocalhost%3A8484%2Findex.tpl.html%22%2C%22type%22%3A%22Sandbox%22%7D%7D%2C%22navigationTrees%22%3A%7B%7D%2C%22features%22%3A%7B%22plugin-contextual-support%22%3Atrue%2C%22jobs-mon-one-enabled%22%3Atrue%7D%7D",
+    "project": "odsc_UI_TEST",
+    "build": "Local_Tests",
+    "name": "build_1_IAD_chrome",
+    "browserName": "chrome",
+    "browserstack.user": "",
+    "browserstack.key": "",
+    "browserstack.debug": "true",
+    "browserstack.console": "errors",
+    "browserstack.networkLogs": "true",
+    "browserstack.seleniumLogs": "true",
+    "arguments": [
+      "no-sandbox",
+      "disable-dev-shm-usage",
+      "disable-gpu",
+      "window-size=1920x1080",
+      "start-maximized",
+      "allow-insecure-localhost",
+      "remote-debugging-port=9222",
+      "headless"
+    ]
+  },
+  "jestTimeOutInSeconds": 80,
+  "loginInfo": {
+    "tenancy": "ociodscdev",
+    "username": "rakesh.walisheter@oracle.com"
+    
+  }
+}

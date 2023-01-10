@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.oracle.pic.commons</groupId>
+    <artifactId>pic-pom</artifactId>
+    <version>0.4.4</version>
+    <!-- parentPom should come from the repository, not the default of ../pom.xml -->
+    <relativePath />
+  </parent>
+
+  <properties/>
+
+  <name>data-science-alarms</name>
+  <artifactId>data-science-tanden-config</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.typesafe</groupId>
+      <artifactId>config</artifactId>
+      <version>1.3.3</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/tanden-config/config</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.sonatype.plexus</groupId>
+            <artifactId>plexus-cipher</artifactId>
+            <version>1.4</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>com.oracle.pic.tanden</groupId>
+        <artifactId>tanden-config-maven-plugin</artifactId>
+        <version>1.1.886</version>
+        <configuration>
+          <configInputPath>
+              ${basedir}/config/alarms-pipeline.conf;
+              ${basedir}/config/alarms-pipeline-oc2.conf;
+              ${basedir}/config/alarms-pipeline-oc3.conf;
+              ${basedir}/config/deployer-pipeline.conf;
+              ${basedir}/config/deployer-pipeline-oc2.conf;
+              ${basedir}/config/deployer-pipeline-oc3.conf;
+          </configInputPath>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

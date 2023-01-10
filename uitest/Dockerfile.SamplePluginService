@@ -1,0 +1,17 @@
+# This image contains Sample Plugin with Loom Plugin Runtime assets and http-server to serve them.
+
+FROM node:9-slim
+
+ARG VERSION=latest
+
+LABEL com.oracle.sampleplugin=
+
+WORKDIR /usr/src/app
+COPY . /usr/src/app/
+
+RUN npm install -g http-server
+
+RUN mkdir /usr/sampleplugin; cp -LR . /usr/sampleplugin/assets; mv /usr/sampleplugin/assets/index.tpl.html /usr/sampleplugin/assets/index.html
+
+EXPOSE 8484
+CMD http-server /usr/sampleplugin/assets -p 8484 -S -C ./certs/console.local.crt -K ./certs/console.local.key --cors
