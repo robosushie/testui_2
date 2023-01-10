@@ -50,21 +50,15 @@ export const FeatureStoreDetails: React.FC<Props> = ({
   const { activeCompartment } = useConsoleState();
   const [contextualSupportEnabled] = useWhitelist(CONTEXTUAL_SUPPORT_WHITELIST);
 
-  const featureStore = useQuery({
-    method: apiClients.fsApi.getFeatureStore,
-    options: {
-      args: { featureStoreId },
-      caching: { type: "polling", pollingInterval: TimeInterval.md },
-    },
-  });
-  const featureStoreReady =
-    !featureStore.error && featureStore.response && featureStore.response.data;
-
-  const GetQueryDetails: React.FC<Props> = () =>{
-    <Link className="oui-button oui-button-primary" href={getRouteClient().makePluginUrl(`/${ResourceNames.featureStore}/${ResourceNames.scratchpad}`)}>
-      QueryService
-    </Link>
-  }
+//   const featureStore = useQuery({
+//     method: apiClients.fsApi.getFeatureStore,
+//     options: {
+//       args: { featureStoreId },
+//       caching: { type: "polling", pollingInterval: TimeInterval.md },
+//     },
+//   });
+  const featureStoreReady = true;
+    // !featureStore.error && featureStore.response && featureStore.response.data;
 
 
   // const user = useQuery({
@@ -77,9 +71,9 @@ export const FeatureStoreDetails: React.FC<Props> = ({
   // This addresses the case when a user visits a featureStore without having already...
   // ...selected a compartment. Default to the compartmentId that is associated with the featureStore.
   React.useEffect(() => {
-    if (!activeCompartment && featureStoreReady) {
-      dispatch(setActiveCompartment(featureStore.response.data.compartmentId));
-    }
+    // if (!activeCompartment && featureStoreReady) {
+    //   dispatch(setActiveCompartment(featureStore.response.data.compartmentId));
+    // }
   }, [activeCompartment, featureStore]);
 
   // Prepare base bread crumb items
@@ -93,19 +87,19 @@ export const FeatureStoreDetails: React.FC<Props> = ({
     },
   ];
 
-  if (featureStore.error) {
-    return (
-      <ErrorPage
-        breadcrumbItems={breadcrumbItems}
-        resourceType={Messages.projects.detailText()}
-        error={featureStore.error}
-      />
-    );
-  }
+//   if (featureStore.error) {
+//     return (
+//       <ErrorPage
+//         breadcrumbItems={breadcrumbItems}
+//         resourceType={Messages.projects.detailText()}
+//         error={featureStore.error}
+//       />
+//     );
+//   }
 
-  if (featureStore.loading) {
-    return <PageLoader />;
-  }
+//   if (featureStore.loading) {
+//     return <PageLoader />;
+//   }
 
   const { id, displayName, lifecycleState, description, timeCreated } = featureStoreReady;
 
@@ -135,8 +129,8 @@ export const FeatureStoreDetails: React.FC<Props> = ({
   const supportRequestPayload = {
     origin: PLUGIN_NAME,
     ocid: featureStoreId,
-    path: `/${PLUGIN_NAME}/${ResourceNames.featureStore}`,
-    resourceType: ResourceNames.featureStore,
+    path: `/${PLUGIN_NAME}/${ResourceNames.featureStore}/${ResourceNames.scratchpad}`,
+    resourceType: ResourceNames.scratchpad,
     details: {
       schema: SUPPORT_CONTEXT_SCHEMA_NAME,
       version: "1.0",
@@ -156,79 +150,7 @@ export const FeatureStoreDetails: React.FC<Props> = ({
 
   return (
     <>
-
-
-
-      <DetailTemplate
-        heading={<DetailHeading title={displayName} />}
-        breadcrumbItems={breadcrumbItems}
-        status={{
-          type: StatusTypeForLifecycleState[lifecycleState],
-          shape: StatusShape.Circle,
-          text: DetailsPrettyLifecycleState(lifecycleState),
-          shapeText: Messages.featureStores.shapeText(),
-        }}
-
-        actions={actions}
-        subresourceContent={
-          <SubresourcesWrapper
-            resourceNavigation={{
-              items: [
-                {
-                  label: Messages.featureStoreEntity.linkText(),
-                  appendPath: ResourceNames.featureStoreEntity,
-                  component: <EntityListingPage />,
-                },
-                {
-                  label: Messages.featureStoreFeatureDefinition.linkText(),
-                  appendPath: ResourceNames.featureStoreFeatureDefinition,
-                  component: <FeatureDefinitionListingPage featureStoreId={featureStoreId} />,
-                },
-                {
-                  label: Messages.featureStoreDataset.linkText(),
-                  appendPath: ResourceNames.featureStoreDataset,
-                  component: <DatasetListingPage />,
-                },
-              ],
-            }}
-          />
-        }
-      >
-
-        <DetailContent
-          details={[
-            {
-              label: Messages.detailTemplate.detailsLabel(Messages.featureStores.detailText()),
-              content: [
-
-                <NullableMetaItem
-                  key="fstore-details-meta-desc"
-                  testId="fstore-details-meta-desc"
-                  label={Messages.featureStores.labels.description()}
-                >
-                  {description}
-                </NullableMetaItem>,
-
-                <LabelMetaItem
-                  key="fstore-details-meta-ocid"
-                  testId="fstore-details-meta-ocid"
-                  label={Messages.detailTemplate.ocid()}
-                >
-                  <ShowCopyText fullText={id} charactersToShow={8} />
-                </LabelMetaItem>,
-                <LabelMetaItem
-                  key="fstore-details-meta-time-created"
-                  testId="fstore-details-meta-time-created"
-                  label={Messages.featureStores.labels.timeCreated()}
-                >
-                  {getDateTimeFormat(timeCreated)}
-                </LabelMetaItem>,
-              ],
-            },
-          ]}
-        />
-        <GetQueryDetails />
-      </DetailTemplate>
+        <h1>Scratchpad Component mounted Successfully</h1>
     </>
   );
 };

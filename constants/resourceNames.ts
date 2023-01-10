@@ -1,6 +1,7 @@
 export namespace ResourceNames {
   export const projects = "projects";
   export const featureStore = "feature-stores";
+  export const scratchpad = "scratchpad";
   export const featureStoreEntity = "entity";
   export const featureStoreFeatureSchema = "feature-store-feature-schema";
   export const featureStoreTransformation = "feature-store-transformation";

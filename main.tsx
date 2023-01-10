@@ -61,6 +61,7 @@ import { ThemeNameProp } from "oui-configuration/dist/configuration/types";
 import { FeatureStoreListingPage } from "./feature-stores/components/FeatureStoreList/FeatureStoreListingPage";
 import { DataSourceListingPage } from "./feature-stores/components/DataSourceList/DataSourceListingPage";
 import { FeatureStoreDetails } from "./feature-stores/pages/FeatureStoreDetails/FeatureStoreDetails";
+import { FeatureStoreScratchpad } from "./feature-stores/pages/FeatureStoreScratchpad/FeatureStoreScratchpad";
 import { FeatureDefinitionDetails } from "./feature-stores/pages/FeatureDefinitionDetails/FeatureDefinitionDetails";
 
 import { initSaveAsStack } from "rms-stack-component";
@@ -113,6 +114,11 @@ const render = (
                   exact={true}
                   path={`/${ResourceNames.featureStore}/:featureStoreId/:activeResourceName`}
                   component={FeatureStoreDetails}
+                />
+                <Route
+                  exact={true}
+                  path={`/${ResourceNames.featureStore}/${ResourceNames.scratchpad}/:featureStoreId/:activeResourceName`}
+                  component={FeatureStoreScratchpad}
                 />
                 <Route
                   exact={true}
@@ -184,6 +190,11 @@ const render = (
                   exact={true}
                   path={`/${ResourceNames.featureStore}/:featureStoreId`}
                   component={FeatureStoreDetails}
+                />
+                <Route
+                  exact={true}
+                  path={`/${ResourceNames.featureStore}/${ResourceNames.scratchpad}/:featureStoreId`}
+                  component={FeatureStoreScratchpad}
                 />
                 <Route
                   exact={true}
